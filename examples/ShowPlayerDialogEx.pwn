@@ -1,4 +1,5 @@
 #include <a_samp>
+#include <iorp>
 
 new My_Dialog;
 enum {

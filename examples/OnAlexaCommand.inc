@@ -1,8 +1,7 @@
-
 public OnAlexaCommand(playerid, const text[])
 {
   // if player type "ucp" or "user control panel" The code below will be executed
-	if(IsStringContainWords(text, "ucp, user control panel")) // , Used to separate words
+  if(IsStringContainWords(text, "ucp, user control panel")) // , Used to separate words
   {
     show_ucp(playerid);
   }

@@ -1,1094 +1,1088 @@
-stock Alexa(playerid, const query[], const response[], size = sizeof response); { return 1 }
-stock Math(const query[], const response[], size = sizeof response); { return 1 }
-stock IsStringContainWords(const string[], const words[]); { return 1 }
-stock Google(const query[], const response[], size = sizeof response); { return 1 }
-stock SortString(const input[], const response[], size = sizeof response); { return 1 }
-stock GetWord(const string[], position = 0, const response[], size = sizeof response); { return 1 }
-stock GetSubString(const string[], const word[], const response[], size = sizeof response); { return 1 }
-stock Translate(const input[], const lang_code[], const Output[], size); { return 1 }
-stock ResetChatSpam(playerid) { return 1 }
-stock OnSpeedHackDetected(playerid) { return 1 }
-stock ResetOriginalPos(playerid) { return 1 }
-stock CallResetTeleportBit(playerid) { return 1 }
-stock GetPlayerTeleportKickStatus(playerid) { return 1 }
-stock SetPlayerTeleportKickStatus(playerid, bool:status) { return 1 }
-stock OnPlayerTeleport(playerid, Float:distance) { return 1 }
-stock SaveVehiclePosition(vehicleid) { return 1 }
-stock ResetHackCounter(playerid) { return 1 }
-stock OnAntiCheatVehicleWarp(playerid, vehicleid) { return 1 }
-stock OnAntiCheatVehicleWarpInto(playerid, vehicleid) { return 1 }
-stock OnPlayerInvalidBulletShot(playerid, reason) { return 1 }
-stock OnVehicleFlyHack(playerid, Float:distance) { return 1 }
-stock OnIncomingPacket(playerid, packetid, BitStream:bs) { return 1 }
-stock OnIncomingRPC(playerid, rpcid, BitStream:bs) { return 1 }
-stock OnVehicleDeathRequest(vehicleid, killerid) { return 1 }
-stock CheckVehicleHealthHack() { return 1 }
-stock ResetVehicleEx(vehicleid) { return 1 }
-stock OnPlayerVehicleRepair(playerid) { return 1 }
-stock OnSetVehicleToRespawnEx(vehicleid) { return 1 }
-stock SetVehicleToRespawnEx(vehicleid) { return 1 }
-stock freezeEx(playerid, time) { return 1 }
-stock freeze(playerid) { return 1 }
-stock unfreeze(playerid) { return 1 }
-stock OnPlayerfreezed(playerid) { return 1 }
-stock OnPlayerUnfreezed(playerid) { return 1 }
-stock ResetHealthBitCall(playerid) { return 1 }
-stock ResetArmourBitCall(playerid) { return 1 }
-stock TogglePlayerSpectatingEx(playerid,bool: toggle) { return 1 }
-stock OnTogglePRSpectatingEx(playerid, bool:toggle) { return 1 }
-stock SetPlayerPosEx(playerid, Float:x, Float:y, Float:z) { return 1 }
-stock OnSetPlayerPosEx(playerid, Float:x, Float:y, Float:z) { return 1 }
-stock SetPlayerPosFindZEx(playerid, Float:x, Float:y, Float:z) { return 1 }
-stock OnSetPlayerPosFindZEx(playerid, Float:x, Float:y, Float:z) { return 1 }
-stock PutPlayerInVehicleEx(playerid, vehicleid, seatid) { return 1 }
-stock OnPutPlayerInVehicleEx(playerid, vehicleid, seatid) { return 1 }
-stock SetPlayerInteriorEx(playerid, interiorid) { return 1 }
-stock OnSetPlayerInteriorEx(playerid, interiorid) { return 1 }
-stock SetPlayerVirtualWorldEx(playerid, worldid) { return 1 }
-stock OnSetPlayerVWEx(playerid, worldid) { return 1 }
-stock SetPlayerSkinEx(playerid, skinid) { return 1 }
-stock OnSetPlayerSkin(playerid, skinid) { return 1 }
-stock OnTeleportVehicleEx(vehicleid, x, y, z, angle, worldid, interiorid) { return 1 }
-stock OnSetVehiclePosEx(vehicleid, Float:x, Float:y, Float:z) { return 1 }
-stock OnPlayerSkinChange(playerid, newskin, oldskin) { return 1 }
-stock OnPlayerVirtualWorld(playerid, newvirtualworld, oldvirtualworld) { return 1 }
-stock Player_COD_Data_Update(playerid) { return 1 }
-stock Player_COD_Data_Init(playerid) { return 1 }
-stock COD_SpawnInMenu(playerid) { return 1 }
-stock COD_PlayerInfoTDUpdate() { return 1 }
-stock CSS_Respawn() { return 1 }
-stock CSS_Bomb(Float:X, Float:Y, Float:Z, type, Float:Radius) { return 1 }
-stock CSS_Defuse_Bomb() { return 1 }
-stock OnPlayerEventJoin(playerid, eventid) { return 1 }
-stock OnPlayerEventLeave(playerid, eventid) { return 1 }
-stock Fallout_Start_Event() { return 1 }
-stock FalloutStarting() { return 1 }
-stock CheckPlayer() { return 1 }
-stock FallingPlat() { return 1 }
-stock PUBG_Player_Data_Update(playerid) { return 1 }
-stock PUBG_Player_Data_Init(playerid) { return 1 }
-stock PUBG_UpdatePlayerTD() { return 1 }
-stock MapShrinkActivate() { return 1 }
-stock PUBG_DestroyPlane(plane_obj) { return 1 }
-stock PUBG_DestroyVehicles() { return 1 }
-stock PUBG_DestroyPickups() { return 1 }
-stock IsPlayerInMatchArea() { return 1 }
-stock EventStartCall() { return 1 }
-stock busroutestoptimer(playerid) { return 1 }
-stock PJobInfo(playerid) { return 1 }
-stock HidePJobInfo(playerid) { return 1 }
-stock LoadLumberJackTrees() { return 1 }
-stock LoadLumberJackBuyers() { return 1 }
-stock LJJS_CutTree(playerid) { return 1 }
-stock LJJS_RespawnTree(id) { return 1 }
-stock LJJS_RemoveLog(id) { return 1 }
-stock Vein_Generate() { return 1 }
-stock Player_Mine(playerid) { return 1 }
-stock Ore_Destroy(id) { return 1 }
-stock OnPlayerShowTaxiDialog(playerid) { return 1 }
-stock OnPlayerFinishedRace(playerid) { return 1 }
-stock OnPlayerExitCar(playerid) { return 1 }
-stock FillTrash(id) { return 1 }
-stock DownRollerBase() { return 1 }
-stock DownObserver_Base() { return 1 }
-stock DownCaida_Base() { return 1 }
-stock StopBull() { return 1 }
-stock spawnVehiculeWithPlayerInto(playerid, vehicle_num, Float:x, Float:y, Float:z, Float:angle, Float:variationZ) { return 1 }
-stock moveObject(objectid, Float:posx, Float:posy, Float:posz, Float:speed) { return 1 }
-stock destroyMissile() { return 1 }
-stock checkPlayerInZone(playerid) { return 1 }
-stock createMissile() { return 1 }
-stock explodeMissile() { return 1 }
-stock launchMissile() { return 1 }
-stock startCountdown() { return 1 }
-stock load_actors() { return 1 }
-stock Check() { return 1 }
-stock update_player_zone_mark() { return 1 }
-stock OnAutoDriveEnable(Path:pathid, playerid, start_time) { return 1 }
-stock AutoDrive(playerid) { return 1 }
-stock LoadBankers() { return 1 }
-stock LoadATMs() { return 1 }
-stock OnBankAccountCreated(playerid, pass[]) { return 1 }
-stock OnBankAccountLogin(playerid, id) { return 1 }
-stock OnBankAccountDeposit(playerid, amount) { return 1 }
-stock OnBankAccountWithdraw(playerid, amount) { return 1 }
-stock OnBankAccountTransfer(playerid, id, amount) { return 1 }
-stock OnBankAccountTransferDone(playerid, id, amount) { return 1 }
-stock OnBankAccountPassChange(playerid, newpass[]) { return 1 }
-stock OnBankAccountDeleted(playerid, id, amount) { return 1 }
-stock OnBankAccountAdminEdit(playerid) { return 1 }
-stock ATM_Regen(id) { return 1 }
-stock Player_Beta_Tester_Init(playerid) { return 1 }
-stock Excitement(playerid,bitchid) { return 1 }
-stock isPlayerInArea() { return 1 }
-stock syncActors() { return 1 }
-stock BusinessTimer() { return 1 }
-stock LoadBusinesses() { return 1 }
-stock OnBusinessCreated(businessid) { return 1 }
-stock BusinessSaleMoney(playerid) { return 1 }
-stock OnPermChange(playerid) { return 1 }
-stock OnPermRemoved(playerid) { return 1 }
-stock PlayerWins(playerid) { return 1 }
-stock GameOwers(playerid) { return 1 }
-stock Load_Clan() { return 1 }
-stock Load_Clan_Rank() { return 1 }
-stock Load_Clan_Skin() { return 1 }
-stock Load_Clan_Weapon() { return 1 }
-stock Load_Vehicle_Clan_Data() { return 1 }
-stock Clan_Player_Init(playerid) { return 1 }
-stock LoadPlayerProgress2(playerid) { return 1 }
-stock ResetCorpSys(playerid) { return 1 }
-stock crusher_OpenDoors() { return 1 }
-stock DCC_OnChannelMessage(DCC_Channel:channel, DCC_User:author, const message[]) { return 1 }
-stock OnDCCommandPerformed(args[], success) { return 1 }
-stock reboot() { return 1 }
-stock kick(playerid) { return 1 }
-stock kickall(playerid) { return 1 }
-stock Player_DJ_Data_Init(playerid) { return 1 }
-stock DJRemixPlayList() { return 1 }
-stock DJAutoPlayList(PlayListID) { return 1 }
-stock LoadDealers() { return 1 }
-stock Player_SaveDrugs(playerid) { return 1 }
-stock Player_Init(playerid) { return 1 }
-stock UpdateDealerDrugs(dealerid) { return 1 }
-stock RemoveDealerDrugs(dealerid) { return 1 }
-stock PlantGrowth(id) { return 1 }
-stock PlantRot(id) { return 1 }
-stock RegenHealth(playerid, amount) { return 1 }
-stock RemoveEffects(playerid) { return 1 }
-stock Acp_OnResponse(playerid, page, response, listitem, const inputtext[]) { return 1 }
-stock Acp_OnInit(playerid, page) { return 1 }
-stock Ascp_OnResponse(playerid, page, response, listitem, const inputtext[]) { return 1 }
-stock Ascp_OnInit(playerid, page) { return 1 }
-stock PlayerData_Data_Init(playerid) { return 1 }
-stock OnDialogResponseEx(playerid, dialogid, offsetid, response, listitem, const inputtext[], extraid, const payload[]) { return 1 }
-stock Hcp_OnResponse(playerid, docid, response) { return 1 }
-stock load_objectsystem() { return 1 }
-stock Pcp_OnResponse(playerid, page, response, listitem, const inputtext[]) { return 1 }
-stock Pcp_OnInit(playerid, page) { return 1 }
-stock Scp_OnResponse(playerid, page, response, listitem, const inputtext[]) { return 1 }
-stock Scp_OnInit(playerid, page) { return 1 }
-stock Ucp_OnResponse(playerid, page, response, listitem, const inputtext[]) { return 1 }
-stock Ucp_OnInit(playerid, page) { return 1 }
-stock LoadEntrance() { return 1 }
-stock Load_Police_Faction_Objects() { return 1 }
-stock Load_Faction() { return 1 }
-stock Load_Faction_Rank() { return 1 }
-stock Load_Faction_Skin() { return 1 }
-stock Load_Faction_Weapon() { return 1 }
-stock Load_Vehicle_Faction_Data() { return 1 }
-stock Faction_Player_Init(playerid) { return 1 }
-stock load_food_system() { return 1 }
-stock RemoveObject(playerid) { return 1 }
-stock FootballAnimation(playerid) { return 1 }
-stock GoalCount() { return 1 }
-stock FootbalTime() { return 1 }
-stock ConsumeFuel() { return 1 }
-stock Refuel(playerid, vehicleid) { return 1 }
-stock load_autogates() { return 1 }
-stock GateSystemCheck() { return 1 }
-stock Hitmarket_LoadPlayerData(playerid) { return 1 }
-stock Hitmarket_HasBounty(playerid) { return 1 }
-stock PurgeExpiredHits() { return 1 }
-stock ResetAndSaveHouses() { return 1 }
-stock LoadHouses() { return 1 }
-stock LoadFurnitures() { return 1 }
-stock GiveHouseKeys(playerid) { return 1 }
-stock HouseSaleMoney(playerid) { return 1 }
-stock invisible_update() { return 1 }
-stock IsPlayerHaveingDlTest(playerid) { return 1 }
-stock IsPlayerHaveLightLicense(playerid) { return 1 }
-stock IsPlayerHaveHeavyLicense(playerid) { return 1 }
-stock IsPlayerHaveTwoWheelerLicense(playerid) { return 1 }
-stock IsPlayerHaveHeliCopterLicense(playerid) { return 1 }
-stock IsPlayerHavePlaneLicense(playerid) { return 1 }
-stock IsPlayerHaveBoatLicense(playerid) { return 1 }
-stock Player_Driving_Data_Init(playerid) { return 1 }
-stock Player_Driving_Data_Update(playerid) { return 1 }
-stock ResetDLStatus(playerid) { return 1 }
-stock ResetLocation(playerid) { return 1 }
-stock GetPlayerCash(playerid) { return 1 }
-stock GivePlayerCash(playerid, money) { return 1 }
-stock SetPlayerCash(playerid, money) { return 1 }
-stock ResetPlayerCash(playerid) { return 1 }
-stock GetPlayerLastHealth(playerid) { return 1 }
-stock SetPlayerLastHealth(playerid, data) { return 1 }
-stock GetPlayerLastArmour(playerid) { return 1 }
-stock SetPlayerLastArmour(playerid, data) { return 1 }
-stock GetPlayerAutoSpawn(playerid) { return 1 }
-stock SetPlayerAutoSpawn(playerid, data) { return 1 }
-stock GetPlayerAdminLevel(playerid) { return 1 }
-stock SetPlayerAdminLevel(playerid, data) { return 1 }
-stock GetPlayerVIPLevel(playerid) { return 1 }
-stock SetPlayerVIPLevel(playerid, data) { return 1 }
-stock GetPlayerWantedLevelEx(playerid) { return 1 }
-stock SetPlayerWantedLevelEx(playerid, data) { return 1 }
-stock GetPlayerInteriorID(playerid) { return 1 }
-stock SetPlayerInteriorID(playerid, data) { return 1 }
-stock GetPlayerVirtualWorldID(playerid) { return 1 }
-stock SetPlayerVirtualWorldID(playerid, data) { return 1 }
-stock IsPlayerMasterAdmin(playerid) { return 1 }
-stock SetPlayerMasterAdmin(playerid, bool:data) { return 1 }
-stock IsPlayerBanned(playerid) { return 1 }
-stock SetPlayerBanStatus(playerid, bool:data) { return 1 }
-stock UpdatePlayerDB(playerid) { return 1 }
-stock OnPlayerDataCheck(playerid, corrupt_check) { return 1 }
-stock OnPlayerLogin(playerid) { return 1 }
-stock OnPlayerRegister(playerid) { return 1 }
-stock CallOnFirstSpawn(playerid) { return 1 }
-stock OnFirstSpawn(playerid) { return 1 }
-stock opc_login_check(playerid) { return 1 }
-stock HTTP_OnLookupResponse(playerid, response, data[]) { return 1 }
-stock OnPlayerKilled(playerid, killerid, weaponid) { return 1 }
-stock Lottery(playerid) { return 1 }
-stock ShowRandomNumbers(playerid) { return 1 }
-stock HideError(playerid) { return 1 }
-stock Elevator_Boost(floorid) { return 1 }
-stock Elevator_TurnToIdle() { return 1 }
-stock LoadDefaulMapIcons() { return 1 }
-stock elevator() { return 1 }
-stock Bus_NPC_Connect() { return 1 }
-stock __OnPlayerPSYSTimerUpdate(playerid) { return 1 }
-stock OnPlayerPause(playerid) { return 1 }
-stock OnPlayerResume(playerid, pausedtime) { return 1 }
-stock EndCallBecauseWait(playerid) { return 1 }
-stock S3TragaperrasGO(playerid) { return 1 }
-stock S3TragaperrasEND(playerid) { return 1 }
-stock GalaxyS3PhoneStart(playerid) { return 1 }
-stock UpdateTime() { return 1 }
-stock Player_Patch_Status_Init(playerid, const pName[]) { return 1 }
-stock OnPatchStatusUpdate_Hud(playerid) { return 1 }
-stock OnPatchStatusUpdate_LSP(playerid) { return 1 }
-stock OnPlayerEditObject(playerid, playerobject, objectid, response, Float:fX, Float:fY, Float:fZ, Float:fRotX, Float:fRotY, Float:fRotZ) { return 1 }
-stock countdownTimer(race, count) { return 1 }
-stock exitVehTimer(playerid) { return 1 }
-stock raceEndingTimer(race) { return 1 }
-stock respawnUnfreeze(playerid) { return 1 }
-stock removeText(playerid) { return 1 }
-stock OnRacePathCalculated(Path:pathid, slot) { return 1 }
-stock RanMessage() { return 1 }
-stock load_randmessage() { return 1 }
-stock LoadRegister_Data() { return 1 }
-stock CashReg_Reset(id, smokeid) { return 1 }
-stock CashReg_Rob(playerid) { return 1 }
-stock SetPlayerRPMode(playerid, bool:status) { return 1 }
-stock EnablePlayerRPMode(playerid) { return 1 }
-stock DisablePlayerRPMode(playerid) { return 1 }
-stock ResetRPMode(playerid) { return 1 }
-stock Safe_Lock(id) { return 1 }
-stock LoadSafe_Data() { return 1 }
-stock scoresystem(playerid) { return 1 }
-stock load_shop_systems() { return 1 }
-stock OnClothesLoad(playerid) { return 1 }
-stock OnFinishPurchase(playerid, index) { return 1 }
-stock OnRemoveFromSlot(playerid, slot) { return 1 }
-stock svetstart(playerid) { return 1 }
-stock dimstart(playerid) { return 1 }
-stock startone(playerid) { return 1 }
-stock startonex(playerid) { return 1 }
-stock destroyFlare(playerid) { return 1 }
-stock vms_car_repair(playerid) { return 1 }
-stock OnSnakeUpdate() { return 1 }
-stock ShipTimer() { return 1 }
-stock CloseDoor1() { return 1 }
-stock CloseDoor2() { return 1 }
-stock CloseDoor3() { return 1 }
-stock SprayTag_Dialog(iPlayerID, iType) { return 1 }
-stock SprayTag(playerid, type) { return 1 }
-stock SprayTag_Load(extraid, type) { return 1 }
-stock SprayTag_QueryCreate(playerid, iIndex) { return 1 }
-stock Load_Static_vehicles() { return 1 }
-stock Update_Static_Vehicle(Id) { return 1 }
-stock DestroyVehicleEx(vehicleid) { return 1 }
-stock FlyPlane(id, Float: x, Float: y, Float: z, angle) { return 1 }
-stock MakeDrop(id, Float: x, Float: y, Float: z) { return 1 }
-stock RemoveDrop(id) { return 1 }
-stock TragaperrasGO(playerid) { return 1 }
-stock TragaperrasEND(playerid) { return 1 }
-stock LoaderAnimation(playerid) { return 1 }
-stock StartWin8(playerid) { return 1 }
-stock LoaderAnimation2(playerid) { return 1 }
-stock Win8GO(playerid) { return 1 }
-stock tablet_UpdateTime(playerid) { return 1 }
-stock tablet_UpdateTime2(playerid) { return 1 }
-stock TaserGetUp(playerid) { return 1 }
-stock ChargeUp(playerid) { return 1 }
-stock nexttic(pplayer1,pplayer2) { return 1 }
-stock HP_TIme_Line() { return 1 }
-stock respawnunoccupiedvehicle() { return 1 }
-stock VSASUpdate(playerid) { return 1 }
-stock LoadxVehicles() { return 1 }
-stock BidBitir(sender, alan) { return 1 }
-stock LoadCarKeys(playerid) { return 1 }
-stock WalkAnim(playerid) { return 1 }
-stock OnPlayerGiveWantedLevel(playerid, const reason[]) { return 1 }
-stock OnPlayerWantedLevelReset(playerid) { return 1 }
-stock Player_Wanted_Data_Init(playerid) { return 1 }
-stock UpdatePlayersWantedLevel() { return 1 }
-stock OnPlayerJailed(playerid) { return 1 }
-stock OnPlayerUnJailed(playerid) { return 1 }
-stock RemoveLastWantedLevel(playerid) { return 1 }
-stock OnAlexaCommand(playerid, const cmd[], const text[]) { return 1 }
-stock bool:IsTimePassedForPlayer(playerid, const Function_Name[], seconds) { return 1 }
-stock ResetChatSpamTimer(playerid) { return 1 }
-stock GetPlayerSpeedHackKickStatus(playerid) { return 1 }
-stock SetPlayerSpeedHackKickStatus(playerid, bool:status) { return 1 }
-stock IsPlayerFalling(playerid)           { return 1 }
-stock ActivateResetOriginalPos(playerid) { return 1 }
-stock DeactivateResetOriginalPos(playerid) { return 1 }
-stock ResetTeleportBit(playerid, time) { return 1 }
-stock SetVehicleOriginalPos(vehicleid) { return 1 }
-stock AttachTrailerToVehicleEx(trailerid, vehicleid) { return 1 }
-stock DetachTrailerFromVehicleEx(vehicleid) { return 1 }
-stock BS_ReadGiveOrTake(BitStream:bs, data[PR_OnGiveTake]) { return 1 }
-stock BS_ReadEnterVehicle(BitStream:bs, data[PR_EnterVehicle]) { return 1 }
-stock BS_ReadExitVehicle(BitStream:bs, data[PR_ExitVehicle]) { return 1 }
-stock BS_ReadOnPlayerEditAttachedObj(BitStream:bs, data[PR_OnPlayerEditAttachedObject]) { return 1 }
-stock BS_ReadSendDialogResponse(BitStream:bs, data[PR_SendDialogResponse]) { return 1 }
-stock Float:GetVehicleAntiHealthEx(vehicleid) { return 1 }
-stock Float:GetVehicleHealthEx(vehicleid) { return 1 }
-stock SetVehicleHealthEx(vehicleid, Float:vhealth) { return 1 }
-stock IsPlayerFreezed(playerid) { return 1 }
-stock GivePlayerWeaponEx(playerid,weaponid,ammo) { return 1 }
-stock ResetPlayerWeaponsEx(playerid) { return 1 }
-stock IsPlayerHaveWeapon(playerid, weaponid) { return 1 }
-stock SetPlayerHealthEx(playerid, Float:sHealth) { return 1 }
-stock GetPlayerHealthEx(playerid) { return 1 }
-stock ResetHealthBit(playerid) { return 1 }
-stock SetPlayerArmourEx(playerid, Float:varmour) { return 1 }
-stock GetPlayerArmourEx(playerid) { return 1 }
-stock ResetArmourBit(playerid) { return 1 }
-stock TeleportVehicleEx(vehicleid,Float:x,Float:y,Float:z,Float:angle, worldid = -1, interiorid = -1) { return 1 }
-stock SetVehiclePosEx(vehicleid, Float:x, Float:y, Float:z) { return 1 }
-stock SendClientMessageEx(playerid, color, const message[], bool:translate = true) { return 1 }
-stock bool:GetPlayerSpectatingStatus(playerid) { return 1 }
-stock COD_GetPlayerScore(playerid) { return 1 }
-stock COD_SetPlayerScore(playerid, data) { return 1 }
-stock COD_GetPlayerDeaths(playerid) { return 1 }
-stock COD_SetPlayerDeaths(playerid, data) { return 1 }
-stock COD_GetPlayerKills(playerid) { return 1 }
-stock COD_SetPlayerKills(playerid, data) { return 1 }
-stock bool:COD_IsTeamValid(teamid) { return 1 }
-stock COD_GetTeamColor(teamid) { return 1 }
-stock COD_GetTeamName(teamid) { return 1 }
-stock COD_GetRankName(rankid) { return 1 }
-stock COD_GetRankRequireScore(rankid) { return 1 }
-stock COD_GetTotalPlayerInTeam(teamid) { return 1 }
-stock COD_SetPlayerTeam(playerid, teamid) { return 1 }
-stock COD_GetPlayerRank(playerid) { return 1 }
-stock COD_SetPlayerRank(playerid, rankid) { return 1 }
-stock COD_GetPlayerTeam(playerid) { return 1 }
-stock COD_ShowZonesToPlayer(playerid) { return 1 }
-stock COD_HideZonesToPlayer(playerid) { return 1 }
-stock COD_PlayerInfoTDCreate(playerid) { return 1 }
-stock COD_PlayerInfoTDDestroy(playerid) { return 1 }
-stock COD_PlayerInfoTDShow(playerid) { return 1 }
-stock COD_PlayerInfoTDHide(playerid) { return 1 }
-stock bool:COD_HasPlayerFlag(playerid) { return 1 }
-stock COD_GetPlayerFlag(playerid) { return 1 }
-stock COD_SetPlayerFlag(playerid, data) { return 1 }
-stock COD_CODZ_CreateFlag(zoneid) { return 1 }
-stock COD_CODZ_GetZoneColor(zoneid) { return 1 }
-stock COD_CODZ_SetZoneTeam(zoneid, teamid) { return 1 }
-stock COD_CODZ_GetZoneTeam(zoneid) { return 1 }
-stock COD_CODZ_GetZoneName(zoneid) { return 1 }
-stock COD_CODZ_ZoneSpawn(playerid, const inputtext[]) { return 1 }
-stock COD_CODZ_UpdateZonesForAll() { return 1 }
-stock COD_CODZ_ShowZonesToPlayer(playerid) { return 1 }
-stock COD_CODZ_HideZonesToPlayer(playerid) { return 1 }
-stock CSS_Spawn_CT(playerid) { return 1 }
-stock CSS_Spawn_TR(playerid) { return 1 }
-stock CSS_SetPDeathstatus(playerid, bool:status) { return 1 }
-stock CSS_GetPDeathstatus(playerid) { return 1 }
-stock CSS_GetPCountCT() { return 1 }
-stock CSS_GetPCountT() { return 1 }
-stock CSS_IsTeamBalanced() { return 1 }
-stock CSS_GetTPAliveCountCT() { return 1 }
-stock CSS_GetTPAliveCountT() { return 1 }
-stock CSS_TeamWinCT() { return 1 }
-stock CSS_TeamWinT() { return 1 }
-stock CSS_IsBombPlanted() { return 1 }
-stock bool:GetPlayerEventVSpawnAuth(playerid) { return 1 }
-stock SetPlayerEventVSpawnAuth(playerid, bool:status) { return 1 }
-stock GetPlayerEventID(playerid) { return 1 }
-stock IsPlayerInEvent(playerid) { return 1 }
-stock SetPlayerEventID(playerid, event_id) { return 1 }
-stock IsEventIdValid(event_id) { return 1 }
-stock GetEventName(event_id) { return 1 }
-stock GetEventStatus(event_id) { return 1 }
-stock join_event(playerid, event_id) { return 1 }
-stock leave_event(playerid) { return 1 }
-stock events_cmd(playerid) { return 1 }
-stock ev_cmd(playerid, const Vehicle[], VehicleID, ColorOne, ColorTwo) { return 1 }
-stock SendEventMessage(playerid, eventid, const message[]) { return 1 }
-stock SendEventMessageAll(eventid, const message[]) { return 1 }
-stock PurgePlatform() { return 1 }
-stock Platforms() { return 1 }
-stock PUBG_GetRandomLocation(&Float:x, &Float:y, &Float:z) { return 1 }
-stock PUBG_GetPlayerKills(playerid) { return 1 }
-stock PUBG_SetPlayerKills(playerid, data) { return 1 }
-stock PUBG_GetPlayerDeaths(playerid) { return 1 }
-stock PUBG_SetPlayerDeaths(playerid, data) { return 1 }
-stock PUBG_GetPlayerPlayed(playerid) { return 1 }
-stock PUBG_SetPlayerPlayed(playerid, data) { return 1 }
-stock PUBG_GetPlayerWins(playerid) { return 1 }
-stock PUBG_SetPlayerWins(playerid, data) { return 1 }
-stock PUBG_IsPlayerInPlane(playerid) { return 1 }
-stock PUBG_SetPlayerInPlaneStatus(playerid, bool:data) { return 1 }
-stock PUBG_IsPlayerInMatch(playerid) { return 1 }
-stock PUBG_SetPlayerInMatchStatus(playerid, bool:data) { return 1 }
-stock PUBG_GetTotalAlive() { return 1 }
-stock PUBG_PlayerInfoTDCreate(playerid) { return 1 }
-stock LobberySpawn(playerid) { return 1 }
-stock PUBG_PlayerInfoTDDestroy(playerid) { return 1 }
-stock PUBG_PlayerInfoTDShow(playerid) { return 1 }
-stock PUBG_PlayerInfoTDHide(playerid) { return 1 }
-stock PUBG_EventStart() { return 1 }
-stock PUBG_EventEnd() { return 1 }
-stock PUBG_WarnForMapArea() { return 1 }
-stock PUBG_SpawnVehicles() { return 1 }
-stock PUBG_SpawnPickups() { return 1 }
-stock skyfall_cmd(playerid) { return 1 }
-stock show_event_locations(playerid) { return 1 }
-stock lumberjack_admin_panel(playerid) { return 1 }
-stock GetPlayerPoint(playerid) { return 1 }
-stock IsTaxiCar(vehicleid) { return 1 }
-stock GetPriceTaxi(playerid) { return 1 }
-stock GetPriceTaxiEx(playerid) { return 1 }
-stock GetPlayerCarDriver(playerid) { return 1 }
-stock GetPlayerCarPass(playerid) { return 1 }
-stock lsfunfair_cmd(playerid) { return 1 }
-stock actor_admin_panel(playerid) { return 1 }
-stock actor_quick_action_cmd(playerid) { return 1 }
-stock AMSS_Show(playerid) { return 1 }
-stock AMSS_Hide(playerid) { return 1 }
-stock GetPlayerUsingAnimationStatus(playerid) { return 1 }
-stock SetPlayerUsingAnimationStatus(playerid, bool:status) { return 1 }
-stock ANS_StopLoopingAnim(playerid) { return 1 }
-stock ANS_PreloadAnimLib(playerid, const animlib[]) { return 1 }
-stock IsInLowRider(playerid) { return 1 }
-stock Anim_Commands(playerid) { return 1 }
-stock weapsys_GetWeaponModel(weaponid) { return 1 }
-stock Float:atan2VehicleZ(Float:Xb,Float:Yb,Float:Xe,Float:Ye) { return 1 }
-stock PullVehicleIntoDirection(vehicleid, Float:x, Float:y, Float:z, Float:speed) { return 1 }
-stock autodrive_cmd(playerid) { return 1 }
-stock autodrivedspeed_cmd(playerid, Float:speed) { return 1 }
-stock autodrivestop_cmd(playerid) { return 1 }
-stock autodrive_menu(playerid) { return 1 }
-stock GetPlayerRepairAuth(playerid) { return 1 }
-stock SetPlayerRepairAuth(playerid, bool:status) { return 1 }
-stock GetPlayerAutoRepairAuth(playerid) { return 1 }
-stock SetPlayerAutoRepairAuth(playerid, bool:status) { return 1 }
-stock bank_cmd(playerid) { return 1 }
-stock atm_cmd(playerid) { return 1 }
-stock bank_acp(playerid) { return 1 }
-stock GetPlayerBetaTesterStatus(playerid) { return 1 }
-stock SetPlayerBetaTesterStatus(playerid, bool:status) { return 1 }
-stock SetPlayerBetaTester(playerid, bool:status) { return 1 }
-stock static JHPreloadAnimLib(playerid) { return 1 }
-stock TogglePlayerMovieMod(playerid,mod) { return 1 }
-stock business_cmd(playerid) { return 1 }
-stock CreateDynamicObjectCamp(Float:x,Float:y,Float:z,Float:a)  { return 1 }
-stock DestroyDynamicObjectCamp() { return 1 }
-stock putcamp_cmd(playerid) { return 1 }
-stock removecamp_cmd(playerid) { return 1 }
-stock info_casino(playerid) { return 1 }
-stock td_casino(playerid) { return 1 }
-stock casinoplay_cmd(playerid) { return 1 }
-stock GetVehicleClan(vehicleid) { return 1 }
-stock ShowClanLockerMenu(playerid, clanid) { return 1 }
-stock Update_Player_Clan_Data(playerid) { return 1 }
-stock Remove_Player_Clan(playerid, PId) { return 1 }
-stock Clan_ShowZonesToPlayer(playerid) { return 1 }
-stock Clan_HideZonesToPlayer(playerid) { return 1 }
-stock GetPlayerClan(playerid) { return 1 }
-stock GetPlayerClanRank(playerid) { return 1 }
-stock SetPlayerClan(playerid, clanid, rankid) { return 1 }
-stock GetClanColor(fId) { return 1 }
-stock GetPlayerClanStatus(playerid) { return 1 }
-stock SetPlayerClanStatus(playerid, bool:status) { return 1 }
-stock GetPlayerClanRequestID(playerid) { return 1 }
-stock SetPlayerClanRequestID(playerid, clanid) { return 1 }
-stock GetPlayersReqForClanCount(clanid) { return 1 }
-stock GetClanLeader(Id) { return 1 }
-stock GetClanLeaderId(fID) { return 1 }
-stock GetClanMemberCount(Id) { return 1 }
-stock GetClanName(Id) { return 1 }
-stock GetClanId(Id) { return 1 }
-stock GetClanWage(Id) { return 1 }
-stock GetClanRankName(fId, rId) { return 1 }
-stock clans_cmd(playerid) { return 1 }
-stock clanpu_cmd(playerid) { return 1 }
-stock SetClanWeaponbySlotID(playerid) { return 1 }
-stock SetClanRankNameByRankID(playerid) { return 1 }
-stock SetClanSkinbySlotID(playerid) { return 1 }
-stock Computer_ReturnPlayerZone(playerid) { return 1 }
-stock Computer_IsPlayerInZone(playerid, zoneid)  { return 1 }
-stock Computer_GetPlayerZone(playerid) { return 1 }
-stock loadcomputers() { return 1 }
-stock destroy( playerid, const params[] ) { return 1 }
-stock reditc( playerid,const params[] ) { return 1 }
-stock rgotoc( playerid,const params[] ) { return 1 }
-stock getco( playerid, const params[] ) { return 1 }
-stock buycom( playerid) { return 1 }
-stock editcomplace(playerid) { return 1 }
-stock sellcom(playerid) { return 1 }
-stock rsellcom(playerid) { return 1 }
-stock removecomputer(playerid) { return 1 }
-stock gpscom(playerid) { return 1 }
-stock lockunlock(playerid) { return 1 }
-stock removecom(comid) { return 1 }
-stock CreateComputer( playerid, Float:x, Float:y, Float:z, Float:a ) { return 1 }
-stock StarComp(playerid) { return 1 }
-stock createclabel(i) { return 1 }
-stock refleshclabel(i) { return 1 }
-stock shutdown(playerid) { return 1 }
-stock Computer_UpdateTime(i) { return 1 }
-stock showSuperBall(playerid)  { return 1 }
-stock hideSuperBall(playerid)  { return 1 }
-stock showmusic(playerid)  { return 1 }
-stock hidemusic(playerid)  { return 1 }
-stock showonglet(playerid)  { return 1 }
-stock shownotif(playerid)  { return 1 }
-stock hidenotif(playerid)  { return 1 }
-stock showfbd(playerid)  { return 1 }
-stock showerd(playerid) { return 1 }
-stock hideerd(playerid) { return 1 }
-stock hidefbd(playerid)  { return 1 }
-stock hideonglet(playerid)  { return 1 }
-stock showlang(playerid)  { return 1 }
-stock hidelang(playerid)  { return 1 }
-stock showmenu(playerid)  { return 1 }
-stock Computer_showzmenu(playerid) { return 1 }
-stock showpgzmenu(playerid)  { return 1 }
-stock hidepgzmenu(playerid)  { return 1 }
-stock hidezmenu(playerid)  { return 1 }
-stock hidemenu(playerid)  { return 1 }
-stock showdatafonddec(playerid)  { return 1 }
-stock hidedatafonddec(playerid)  { return 1 }
-stock showfonddec(playerid)  { return 1 }
-stock hidefonddec(playerid)  { return 1 }
-stock showbarre(playerid)  { return 1 }
-stock hidebarre(playerid)  { return 1 }
-stock showwinico(playerid)  { return 1 }
-stock hidewinico(playerid)  { return 1 }
-stock showmap(playerid)  { return 1 }
-stock showZombies(playerid)  { return 1 }
-stock hideZombies(playerid)  { return 1 }
-stock hidemap(playerid)  { return 1 }
-stock spmusic(playerid)  { return 1 }
-stock setPlay(playerid)  { return 1 }
-stock SetStop(playerid)  { return 1 }
-stock musicplace(playerid) { return 1 }
-stock editmpos(playerid,pos) { return 1 }
-stock showpbarre(playerid) { return 1 }
-stock showpball(playerid) { return 1 }
-stock hidepbarre(playerid) { return 1 }
-stock destroybarre(playerid) { return 1 }
-stock refleshballbar(playerid) { return 1 }
-stock createpb(playerid)  { return 1 }
-stock movepbarre(playerid,Float:X,Float:Y)  { return 1 }
-stock ShowAllPlayer(playerid) { return 1 }
-stock ShowMsgPlayer(playerid) { return 1 }
-stock SM(playerid,const msg[])  { return 1 }
-stock rconlist(playerid)  { return 1 }
-stock getid(const params[])  { return 1 }
-stock barrelang(playerid, langue) { return 1 }
-stock tarjm(playerid, langue) { return 1 }
-stock onlineerror(playerid) { return 1 }
-stock UpdateTextDrawKiller(playerid) { return 1 }
-stock crusher_IsVehicleWanted(vehicleid) { return 1 }
-stock ObtainScriptDebugID(const FunctionName[]) { return 1 }
-stock RemoveScriptDebugID(id) { return 1 }
-stock GetTotalScriptDebugID() { return 1 }
-stock GetTotalFreeScriptDebugID() { return 1 }
-stock GetTotalObtainedScriptDebugID() { return 1 }
-stock bool:IsValidScriptDebugID(id) { return 1 }
-stock bool:IsValidDebugID(debug_id) { return 1 }
-stock bool:GetPlayerDebugStatus(playerid, debug_id) { return 1 }
-stock SetPlayerDebugStatus(playerid, debug_id, bool:status) { return 1 }
-stock SendDebugMessage(debug_id, const message[]) { return 1 }
-stock cmd_debug_menu(playerid) { return 1 }
-stock SendDCM(const message[]) { return 1 }
-stock Discord_ALog(const message[]) { return 1 }
-stock Discord_Log(const message[]) { return 1 }
-stock Discord_WIIS(const message[]) { return 1 }
-stock Discord_RPLOG(const message[]) { return 1 }
-stock IsPlayerDJ(playerid) { return 1 }
-stock SetPlayerDJStatus(playerid, bool:status) { return 1 }
-stock SetPlayerAsDJ(playerid, bool:status) { return 1 }
-stock GetPlayerTTSstatus(playerid) { return 1 }
-stock SetPlayerTTSstatus(playerid, bool:status) { return 1 }
-stock GetPlayerMP3status(playerid) { return 1 }
-stock SetPlayerMP3status(playerid, bool:status) { return 1 }
-stock GetPlayListSongName(SongID) { return 1 }
-stock GetPlayListSongCreator(SongID) { return 1 }
-stock GetPlayListName(PlayListID) { return 1 }
-stock GetPlayListCreatorName(PlayListID) { return 1 }
-stock View_PlayList(playerid, paged = 0) { return 1 }
-stock View_PlayList_Songs(playerid, PlayListID, paged = 0) { return 1 }
-stock Open_DJ_Panel(playerid) { return 1 }
-stock ProxDetector(Float: radius = 30.0, playerid, const text[], col1 = 0xFFFFFFFF, col2 = 0xCCCCCCFF, col3 = 0x999999FF, col4 = 0x666666FF, col5 = 0x333333FF) { return 1 }
-stock GDS_RemovePlayerWeapon(playerid, weaponid) { return 1 }
-stock dropgunsystem_admin_panel(playerid) { return 1 }
-stock usedrugs_cmd(playerid, amount) { return 1 }
-stock givedrugs_cmd(playerid, id, amount) { return 1 }
-stock selldrugs_cmd(playerid, id, price) { return 1 }
-stock drug_dealer_cmd(playerid) { return 1 }
-stock drug_plant_cmd(playerid, const params[]) { return 1 }
-stock drug_acp(playerid) { return 1 }
-stock iorp_drug_menu(playerid) { return 1 }
-stock Acp_Init(playerid, page = 0) { return 1 }
-stock Acp_AddCommand(playerid, const command[], bool:top = false) { return 1 }
-stock Ascp_Init(playerid, page = 0) { return 1 }
-stock Ascp_AddCommand(playerid, const command[], bool:top = false) { return 1 }
-stock Credit_GetFreeID(page, const Script[], const Author[]) { return 1 }
-stock Credit_RemoveID(id) { return 1 }
-stock Credit_TotalID() { return 1 }
-stock Credit_GetTotalFreeID() { return 1 }
-stock Credit_GetTotalUsedID() { return 1 }
-stock bool:Credit_IsValidID(id) { return 1 }
-stock Credits_Init(playerid, page = 0) { return 1 }
-stock Database_Add_Bool(const column[]) { return 1 }
-stock Database_Add_Int(const column[]) { return 1 }
-stock Database_Add_Float(const column[]) { return 1 }
-stock Database_Add_String(const column[], size = 50) { return 1 }
-stock bool:Database_Get_Bool(playerid, const column[]) { return 1 }
-stock Database_Get_Int(playerid, const column[]) { return 1 }
-stock Float:Database_Get_Float(playerid, const column[]) { return 1 }
-stock Database_Get_String(playerid, const column[]) { return 1 }
-stock Database_Update_Bool(playerid, const column[], bool:data) { return 1 }
-stock Database_Update_Int(playerid, const column[], data) { return 1 }
-stock Database_Update_Float(playerid, const column[], Float:data) { return 1 }
-stock Database_Update_String(playerid, const column[], const data[]) { return 1 }
-stock Dialog_GetFreeID() { return 1 }
-stock Dialog_RemoveID(id) { return 1 }
-stock Dialog_TotalID() { return 1 }
-stock Dialog_GetTotalFreeID() { return 1 }
-stock Dialog_GetTotalUsedID() { return 1 }
-stock bool:Dialog_IsValidID(id) { return 1 }
-stock ShowPlayerDialogEx(playerid, dialogid, offsetid, style, const caption[], const info[], const button1[], const button2[], extraid = -1, const payload[] = \"null\") { return 1 }
-stock Doc_GetFreeID() { return 1 }
-stock Doc_RemoveID(id) { return 1 }
-stock Doc_TotalID() { return 1 }
-stock Doc_GetTotalFreeID() { return 1 }
-stock Doc_GetTotalUsedID() { return 1 }
-stock bool:Doc_IsValidID(id) { return 1 }
-stock Hcp_AddDoc(page, docid, const DocTitle[], const DocData[]) { return 1 }
-stock Hcp_ViewDoc(playerid, docid) { return 1 }
-stock Hcp_Init(playerid, page = 0) { return 1 }
-stock reload_dynamicobj() { return 1 }
-stock dynamicobject_admin_panel(playerid) { return 1 }
-stock Pcp_Init(playerid, page = 0) { return 1 }
-stock Pcp_AddCommand(playerid, const command[], bool:top = false) { return 1 }
-stock Scp_Init(playerid, page = 0) { return 1 }
-stock Scp_AddCommand(playerid, const command[], bool:top = false) { return 1 }
-stock Ucp_Init(playerid, page = 0) { return 1 }
-stock Ucp_AddCommand(playerid, const command[], bool:top = false) { return 1 }
-stock GetPlayerUCPStatus(playerid) { return 1 }
-stock SetPlayerUCPStatus(playerid, bool:status) { return 1 }
-stock User_Panel(playerid) { return 1 }
-stock User_PanelMenu(playerid) { return 1 }
-stock Entrance_Update(entranceID) { return 1 }
-stock entrance_admin_panel(playerid) { return 1 }
-stock sapdobject_cmd(playerid) { return 1 }
-stock GetVehicleFaction(vehicleid) { return 1 }
-stock ShowFactionLockerMenu(playerid, factionid) { return 1 }
-stock Update_Player_Faction_Data(playerid) { return 1 }
-stock Remove_Player_Faction(playerid, PId) { return 1 }
-stock Faction_ShowZonesToPlayer(playerid) { return 1 }
-stock Faction_HideZonesToPlayer(playerid) { return 1 }
-stock GetPlayerFaction(playerid) { return 1 }
-stock GetPlayerFactionRank(playerid) { return 1 }
-stock SetPlayerFaction(playerid, factionid, rankid) { return 1 }
-stock GetFactionColor(fId) { return 1 }
-stock GetPlayerFactionStatus(playerid) { return 1 }
-stock SetPlayerFactionStatus(playerid, bool:status) { return 1 }
-stock GetPlayerFactionRequestID(playerid) { return 1 }
-stock SetPlayerFactionRequestID(playerid, factionid) { return 1 }
-stock GetPlayersReqForFactionCount(factionid) { return 1 }
-stock GetFactionLeader(Id) { return 1 }
-stock GetFactionLeaderId(fID) { return 1 }
-stock GetFactionMemberCount(Id) { return 1 }
-stock GetFactionName(Id) { return 1 }
-stock GetFactionId(Id) { return 1 }
-stock GetFactionWage(Id) { return 1 }
-stock GetFactionRankName(fId, rId) { return 1 }
-stock factions_cmd(playerid) { return 1 }
-stock factionpu_cmd(playerid) { return 1 }
-stock SetFactionWeaponbySlotID(playerid) { return 1 }
-stock SetFactionRankNameByRankID(playerid) { return 1 }
-stock SetFactionSkinbySlotID(playerid) { return 1 }
-stock bool:IsValidRelation(relationid) { return 1 }
-stock CMD_FamilyDialog(playerid) { return 1 }
-stock GetMoveDirectionFromKeys(ud, lr) { return 1 }
-stock MoveCamera(playerid) { return 1 }
-stock SetFlyModePos(playerid, Float:x, Float:y, Float:z) { return 1 }
-stock GetFlyModePos(playerid, &Float:x, &Float:y, &Float:z) { return 1 }
-stock GetNextCameraPosition(move_mode, const Float:CP[3], const Float:FV[3], &Float:X, &Float:Y, &Float:Z) { return 1 }
-stock CancelFlyMode(playerid) { return 1 }
-stock StartFlyMode(playerid) { return 1 }
-stock GetXYInFrontOfActor(actorid, &Float:x, &Float:y, Float:distance) { return 1 }
-stock food_system_admin_panel(playerid) { return 1 }
-stock save_food_act_cmd(playerid) { return 1 }
-stock IsPlayerNearFood(playerid) { return 1 }
-stock order_food_cmd(playerid) { return 1 }
-stock FootballMessage(color, const string[]) { return 1 }
-stock IsObjectInTheArea(objectid, Float:minx, Float:miny, Float:maxx, Float:maxy) { return 1 }
-stock LoopingAnim(playerid, const animlib[], const animname[], Float:vSpeed, looping, lockx, locky, lockz, lp) { return 1 }
-stock StopLoopingAnim(playerid) { return 1 }
-stock cmd_football(playerid) { return 1 }
-stock GetPlayerFuelAuth(playerid) { return 1 }
-stock SetPlayerFuelAuth(playerid, bool:status) { return 1 }
-stock GetPlayerAutoFuelAuth(playerid) { return 1 }
-stock SetPlayerAutoFuelAuth(playerid, bool:status) { return 1 }
-stock refuel_cmd(playerid) { return 1 }
-stock SetVehicleFuelEx(vehicleid, fuel) { return 1 }
-stock Float:GetVehicleFuelEx(vehicleid) { return 1 }
-stock Fuel_System_ACP(playerid) { return 1 }
-stock gate_cmd(playerid) { return 1 }
-stock auto_gate_admin_panel(playerid) { return 1 }
-stock gps_cmd(playerid) { return 1 }
-stock hit_OnPlayerDeath(playerid, killerid) { return 1 }
-stock LoadHouseKeys(playerid) { return 1 }
-stock GetZoneName(Float: x, Float: y, Float: z) { return 1 }
-stock GetCityName(Float: x, Float: y, Float: z) { return 1 }
-stock RemovePlayerWeapon(playerid, weapon) { return 1 }
-stock GetXYInFrontOfPlayer(playerid, &Float:x, &Float:y, Float:distance) { return 1 }
-stock GetXYInBackOfPlayer(playerid, &Float:x, &Float:y, Float:distance) { return 1 }
-stock SendToHouse(playerid, id) { return 1 }
-stock ShowHouseMenu(playerid) { return 1 }
-stock ResetHouse(id) { return 1 }
-stock SaveHouse(id) { return 1 }
-stock UpdateHouseLabel(id) { return 1 }
-stock OwnedHouses(playerid) { return 1 }
-stock house_cmd(playerid) { return 1 }
-stock SetPlayerInvicStatus(playerid, bool:status) { return 1 }
-stock GetPlayerInvicStatus(playerid) { return 1 }
-stock IsPlayerActivedInvisibleMode(playerid) { return 1 }
-stock SetPlayerInvisibleMode(playerid, bool:status) { return 1 }
-stock makeplayerinvisible_cmd(adminid, playerid) { return 1 }
-stock dltest_cmd(playerid) { return 1 }
-stock IsPlayerInFlyableVehicle(playerid) { return 1 }
-stock ShowLifeGuide(playerid, intro_id = 0) { return 1 }
-stock GetPlayerID(playerid) { return 1 }
-stock SetPlayerID(playerid, data) { return 1 }
-stock GetPlayerUsername(playerid) { return 1 }
-stock SetPlayerUsername(playerid, const name[MAX_PLAYER_NAME]) { return 1 }
-stock GetPlayerPassword(playerid) { return 1 }
-stock SetPlayerPassword(playerid, const data[65]) { return 1 }
-stock GetPlayerSalt(playerid) { return 1 }
-stock SetPlayerSalt(playerid, const data[11]) { return 1 }
-stock GetPlayerKills(playerid) { return 1 }
-stock SetPlayerKills(playerid, data) { return 1 }
-stock GetPlayerDeaths(playerid) { return 1 }
-stock SetPlayerDeaths(playerid, data) { return 1 }
-stock GetPlayerPlayedTime(playerid) { return 1 }
-stock SetPlayerPlayedTime(playerid, data) { return 1 }
-stock GetPlayerPauseTime(playerid) { return 1 }
-stock SetPlayerPauseTime(playerid, data) { return 1 }
-stock Float:GetPlayerLastPosX(playerid) { return 1 }
-stock SetPlayerLastPosX(playerid, Float:data) { return 1 }
-stock Float:GetPlayerLastPosY(playerid) { return 1 }
-stock SetPlayerLastPosY(playerid, Float:data) { return 1 }
-stock Float:GetPlayerLastPosZ(playerid) { return 1 }
-stock SetPlayerLastPosZ(playerid, Float:data) { return 1 }
-stock Float:GetPlayerLastPosAngle(playerid) { return 1 }
-stock SetPlayerLastPosAngle(playerid, Float:data) { return 1 }
-stock GetPlayerPasswordFails(playerid) { return 1 }
-stock SetPlayerPasswordFails(playerid, data) { return 1 }
-stock Cache:GetPlayerPlayer_Cache(playerid) { return 1 }
-stock SetPlayerPlayer_Cache(playerid, Cache:data) { return 1 }
-stock IsPlayerLoggedIn(playerid) { return 1 }
-stock GetPlayerLoginStatus(playerid) { return 1 }
-stock SetPlayerLoginStatus(playerid, bool:data) { return 1 }
-stock GetPlayerSpawnStatus(playerid) { return 1 }
-stock SetPlayerSpawnStatus(playerid, bool:data) { return 1 }
-stock GetPlayerDeathStatus(playerid) { return 1 }
-stock SetPlayerDeathStatus(playerid, bool:data) { return 1 }
-stock GetPlayerUpdateTimerID(playerid) { return 1 }
-stock SetPlayerUpdateTimerID(playerid, data) { return 1 }
-stock GetPlayerScoreTimerID(playerid) { return 1 }
-stock SetPlayerScoreTimerID(playerid, data) { return 1 }
-stock bool:GetPlayerFirstSpawnStatus(playerid) { return 1 }
-stock SetPlayerFirstSpawnStatus(playerid, bool:status) { return 1 }
-stock GetPlayerCountry(playerid) { return 1 }
-stock GetPlayerRegion(playerid) { return 1 }
-stock GetPlayerCity(playerid) { return 1 }
-stock GetPlayerISP(playerid) { return 1 }
-stock GetPlayerTimezone(playerid) { return 1 }
-stock GetPlayerZipcode(playerid) { return 1 }
-stock changepassword_cmd(playerid, const newpass[]) { return 1 }
-stock logout_cmd(playerid) { return 1 }
-stock autospawn_cmd(playerid) { return 1 }
-stock MasterAdmin_cmd(playerid) { return 1 }
-stock GetPlayerMutedStatus(playerid) { return 1 }
-stock SetPlayerMutedStatus(playerid, bool:status) { return 1 }
-stock mute_cmd(playerid, pID, bool:status) { return 1 }
-stock change_skin(playerid) { return 1 }
-stock cmd_lottery(playerid)                                          { return 1 }
-stock Lottery_GetFreeSlot(playerid)                                                           { return 1 }
-stock FindSlot(playerid, lotter_number)                                                      { return 1 }
-stock CreatePlayerTextDraws(playerid)                                                 { return 1 }
-stock CreateGlobalTextDraws() { return 1 }
-stock HideTDForPlayer(playerid) { return 1 }
-stock Elevator_Initialize() { return 1 }
-stock Elevator_Destroy() { return 1 }
-stock Elevator_OpenDoors() { return 1 }
-stock Elevator_CloseDoors() { return 1 }
-stock Floor_OpenDoors(floorid) { return 1 }
-stock Floor_CloseDoors(floorid) { return 1 }
-stock Elevator_MoveToFloor(floorid) { return 1 }
-stock RemoveFirstQueueFloor() { return 1 }
-stock AddFloorToQueue(floorid) { return 1 }
-stock ResetElevatorQueue() { return 1 }
-stock IsFloorInQueue(floorid) { return 1 }
-stock ReadNextFloorInQueue() { return 1 }
-stock DidPlayerRequestElevator(playerid) { return 1 }
-stock ShowElevatorDialog(playerid) { return 1 }
-stock CallElevator(playerid, floorid) { return 1 }
-stock Float:GetElevatorZCoordForFloor(floorid) { return 1 }
-stock Float:GetDoorsZCoordForFloor(floorid) { return 1 }
-stock mapicon_admin_panel(playerid) { return 1 }
-stock mill_mount_lift_cmd(playerid) { return 1 }
-stock cmd_minigames(playerid) { return 1 }
-stock MLM_GetMessages(const message[], const array[][], lines = sizeof(array), line_size = sizeof(array[])) { return 1 }
-stock MLM_ShiftStartPos(const message[], pos, bool:is_packed, size = sizeof(message)) { return 1 }
-stock MLM_ShiftEndPos(const message[], pos, bool:is_packed) { return 1 }
-stock MLM_MakeString(dest[], const size = sizeof(dest), const src[], const bool:is_packed, &last_color, const length, const line, &spos, &epos, const prefix[], const prefix_length, const postfix[], const postfix_length) { return 1 }
-stock nametagson_cmd(playerid) { return 1 }
-stock nametagsoff_cmd(playerid) { return 1 }
-stock nametags_system_panel(playerid) { return 1 }
-stock Start_Train_Engine(vehicleid) { return 1 }
-stock bool:IsPlayerPaused(playerid)  { return 1 }
-stock GetPlayerPausedTime(playerid)  { return 1 }
-stock NumberUsed(playerid) { return 1 }
-stock GetPlayerPhoneNumber(playerid) { return 1 }
-stock GalaxyS3Phone(playerid,current) { return 1 }
-stock GalaxyS3PhoneStarting(playerid,current) { return 1 }
-stock GetMonth(Month) { return 1 }
-stock GetYearFormat00(Year) { return 1 }
-stock ActualizarWEATHER() { return 1 }
-stock ReturnPlayerZone(playerid) { return 1 }
-stock phonesys_IsPlayerInZone(playerid, zoneid)  { return 1 }
-stock GetPlayerZone(playerid) { return 1 }
-stock sel_phone_cmd(playerid) { return 1 }
-stock mynumber_phone_cmd(playerid) { return 1 }
-stock phone_cmd(playerid) { return 1 }
-stock answer_phone_cmd(playerid) { return 1 }
-stock hangup_phone_cmd(playerid) { return 1 }
-stock GetPatchStatus_Hud(playerid) { return 1 }
-stock SetPatchStatus_Hud(playerid, bool:status) { return 1 }
-stock GetPatchStatus_LSP(playerid) { return 1 }
-stock SetPatchStatus_LSP(playerid, bool:status) { return 1 }
-stock player_patch_cmd(playerid) { return 1 }
-stock GetPlayerPMstatus(playerid) { return 1 }
-stock SetPlayerPMstatus(playerid, bool:status) { return 1 }
-stock GetPlayerLastPMID(playerid) { return 1 }
-stock SetPlayerLastPMID(playerid, recieverid) { return 1 }
-stock nopm_cmd(playerid) { return 1 }
-stock pm_cmd(playerid, receiverid, const message[]) { return 1 }
-stock reply_cmd(playerid, const message[]) { return 1 }
-stock bool:IsValidAccount(const Account[]) { return 1 }
-stock bool:IsAccountDisabled(const Account[]) { return 1 }
-stock GetAccountAdminLevel(const Account[]) { return 1 }
-stock GetAccountVIPLevel(const Account[]) { return 1 }
-stock bool:GetAccountMasterAdminStatus(const Account[]) { return 1 }
-stock cmd_profile_action(playerid, const Account[]) { return 1 }
-stock quick_action_cmd(playerid) { return 1 }
-stock race_OnPlayerUpdateEx(playerid) { return 1 }
-stock getFirstEmptyCPSlot(race) { return 1 }
-stock updateContestantList(race) { return 1 }
-stock createRace(playerid, slot) { return 1 }
-stock spawnInRace(playerid, race, spot = -1) { return 1 }
-stock calculateNextRacePart(slot, curCPSlot, MapNode:lastNode, bool: firstcalculation = false) { return 1 }
-stock irs_race_system_show(playerid, const cmdtext[]) { return 1 }
-stock iorp_race_menu(playerid) { return 1 }
-stock hintmessages_cmd(playerid) { return 1 }
-stock register_hacking_system_panel(playerid) { return 1 }
-stock GetPlayerRPMode(playerid) { return 1 }
-stock safe_hacking_system_panel(playerid) { return 1 }
-stock CreateArt3(const ArtObject[][], type, Float:SA_PosX, Float:SA_PosY, Float:SA_PosZ, Float:SA_RotX, Float:SA_RotY, Float:SA_RotZ, Float:DrawDistance = 300.0) { return 1 }
-stock CreateDynamicArt3(const ArtObject[][], type, Float:SA_PosX, Float:SA_PosY, Float:SA_PosZ, Float:SA_RotX, Float:SA_RotY, Float:SA_RotZ, worldid = -1, interiorid = -1, playerid = -1, Float:StreamDistance = 200.0, Float:DrawDistance = 300.0 ) { return 1 }
-stock CreateArtInternal3(const ArtObject[][], type, dynamic, Float:SA_PosX, Float:SA_PosY, Float:SA_PosZ, Float:SA_RotX, Float:SA_RotY, Float:SA_RotZ, worldid = -1, interiorid = -1, playerid = -1, Float:StreamDistance = 200.0, Float:DrawDistance = 300.0 ) { return 1 }
-stock DestroyArt3Internal(ArtID) { return 1 }
-stock DestroyArt3(ArtID) { return 1 }
-stock DestroyDynamicArt3(ArtID) { return 1 }
-stock GetScoreTimerStatus(playerid) { return 1 }
-stock ScoreTimerDisable(playerid) { return 1 }
-stock ScoreTimerEnable(playerid) { return 1 }
-stock SS_Update_Shop_Data(id) { return 1 }
-stock SS_Drop_Shop_Data(id) { return 1 }
-stock shop_system_acp(playerid) { return 1 }
-stock SS_Open_Update_Menu(playerid, id) { return 1 }
-stock SS_OpenShop(playerid, id) { return 1 }
-stock LoadPlayerClothes(playerid) { return 1 }
-stock GetFreeSlot(playerid) { return 1 }
-stock OnBuyClothes(playerid, index, cmodel, bone, Float:fOffsetX, Float:fOffsetY, Float:fOffsetZ, Float:fRotX, Float:fRotY, Float:fRotZ, Float:fScaleX, Float:fScaleY, Float:fScaleZ) { return 1 }
-stock ClothesEditDialog(playerid, index) { return 1 }
-stock ShowClothesDialog(playerid, fromslot) { return 1 }
-stock SavePlayerClothes(playerid) { return 1 }
-stock UpdatePlayerToy(playerid, slot) { return 1 }
-stock EditClothing(playerid, index) { return 1 }
-stock ReplaceClothing(playerid, index) { return 1 }
-stock PlaceClothing(playerid, index) { return 1 }
-stock DisplayClothing(playerid) { return 1 }
-stock ShowDialog(playerid, dialogid, style, const caption[], const info[], const button1[], const button2[], status) { return 1 }
-stock GetModelName(cmodel) { return 1 }
-stock RemoveFromSlot(playerid, slot) { return 1 }
-stock ResetClothes(playerid) { return 1 }
-stock GetName(playerid) { return 1 }
-stock SyntaxMSG(playerid, const message[]) { return 1 }
-stock GetBoneName(boneid) { return 1 }
-stock bool:ETShop_GetPhoneStatus(playerid) { return 1 }
-stock ETShop_SetPhoneStatus(playerid, bool:data) { return 1 }
-stock bool:ETShop_GetTabletStatus(playerid) { return 1 }
-stock ETShop_SetTabletStatus(playerid, bool:data) { return 1 }
-stock etshop_cmd(playerid) { return 1 }
-stock blow_pyrotechnic_cmd(playerid) { return 1 }
-stock OpenRepairMenu(playerid) { return 1 }
-stock OpenModMenu(playerid) { return 1 }
-stock iorp_dealership_shop_menu(playerid) { return 1 }
-stock weapons_shop_menu(playerid)  { return 1 }
-stock start_snake_cmd(playerid) { return 1 }
-stock start_spectate(playerid, targetid) { return 1 }
-stock stop_spectate(playerid) { return 1 }
-stock SprayTag_Create(playerid, iIndex) { return 1 }
-stock SprayTag_Spawn(playerid, iIndex) { return 1 }
-stock SprayTag_Save(playerid, iIndex) { return 1 }
-stock SprayTag_Clear(playerid, iIndex) { return 1 }
-stock HexToInt(const string[]) { return 1 }
-stock cmd_tags(playerid) { return 1 }
-stock GetPlayerStaticVehicleID(playerid) { return 1 }
-stock GetStaticVehicleID(vehicleid) { return 1 }
-stock GetStaticVehicleFactionID(Id) { return 1 }
-stock staticvehicle_admin_panel(playerid) { return 1 }
-stock drop_cmd(playerid) { return 1 }
-stock ShowTabletForPlayer(playerid) { return 1 }
-stock HideTabletForPlayer(playerid) { return 1 }
-stock ShowUserLogTablet(playerid) { return 1 }
-stock HideUserLogTablet(playerid) { return 1 }
-stock ShowStartMenuTablet(playerid) { return 1 }
-stock HideStartMenuTablet(playerid) { return 1 }
-stock ShowPagForItems(playerid) { return 1 }
-stock HidePagForItems(playerid) { return 1 }
-stock ShowEscritorioForPlayer(playerid) { return 1 }
-stock HideEscritorioForPlayer(playerid) { return 1 }
-stock ShowPhotosForPlayer(playerid) { return 1 }
-stock HidePhotosForPlayer(playerid) { return 1 }
-stock ShowClockForPlayer(playerid) { return 1 }
-stock HideClockForPlayer(playerid) { return 1 }
-stock ShowTabletMusicPlayer(playerid) { return 1 }
-stock HideTabletMusicPlayer(playerid) { return 1 }
-stock CameraMode(playerid,type) { return 1 }
-stock ShowTabletMap(playerid) { return 1 }
-stock HideTabletMap(playerid) { return 1 }
-stock ShowGames(playerid) { return 1 }
-stock HideGames(playerid) { return 1 }
-stock ShowSlotMachine(playerid) { return 1 }
-stock HideSlotMachine(playerid) { return 1 }
-stock ShowTabletWeather(playerid) { return 1 }
-stock HideTabletWeather(playerid) { return 1 }
-stock ShowPage(playerid,page) { return 1 }
-stock IsNumeric(const string[]) { return 1 }
-stock tablet_cmd(playerid) { return 1 }
-stock taser_cmd(playerid) { return 1 }
-stock GetPlayerTPAuth(playerid) { return 1 }
-stock SetPlayerTPAuth(playerid, bool:status) { return 1 }
-stock accept_ttt_cmd(playerid) { return 1 }
-stock starttictac(pplayer1,pplayer2) { return 1 }
-stock tickbox(playerid,boxid) { return 1 }
-stock CreateTicTD(playerid) { return 1 }
-stock cmd_tictacktoe(playerid) { return 1 }
-stock CreateHPTL() { return 1 }
-stock HideHPTL(playerid) { return 1 }
-stock ShowHPTL(playerid) { return 1 }
-stock DestroyHPTL() { return 1 }
-stock uTranslate(const string[], const lang[]) { return 1 }
-stock eTranslate(const string[], const lang[]) { return 1 }
-stock GetPlayerNativeLang(playerid) { return 1 }
-stock SetPlayerNativeLang(playerid, const lang[]) { return 1 }
-stock EnableIncomingTranslation(playerid, const lang[]) { return 1 }
-stock DisableIncomingTranslation(playerid) { return 1 }
-stock bool:GetPlayerInTranslationStatus(playerid) { return 1 }
-stock GetPlayerInTranslationLang(playerid) { return 1 }
-stock EnableOutgoingTranslation(playerid, const lang[]) { return 1 }
-stock DisableOutgoingTranslation(playerid) { return 1 }
-stock bool:GetPlayerOutTranslationStatus(playerid) { return 1 }
-stock bool:GetPlayerTranslationOMStatus(playerid) { return 1 }
-stock SetPlayerTranslationOMStatus(playerid, bool:status) { return 1 }
-stock GetPlayerOutTranslationLang(playerid) { return 1 }
-stock Lang_Data() { return 1 }
-stock ult_panel(playerid) { return 1 }
-stock CreateVSAS(playerid) { return 1 }
-stock HideVSAS(playerid) { return 1 }
-stock ShowVSAS(playerid) { return 1 }
-stock DestroyVSAS(playerid) { return 1 }
-stock vm_cmd(playerid) { return 1 }
-stock vunlock_cmd(playerid) { return 1 }
-stock switch_engine(playerid) { return 1 }
-stock switch_alarm(playerid) { return 1 }
-stock switch_doors(playerid) { return 1 }
-stock switch_bonnet(playerid) { return 1 }
-stock switch_boot(playerid) { return 1 }
-stock switch_windows(playerid) { return 1 }
-stock switch_lights(playerid) { return 1 }
-stock SaveVehicleMod(xid) { return 1 }
-stock LoadVehicleMod(xid) { return 1 }
-stock LoadxVehicleKeys(playerid) { return 1 }
-stock GetVehiclexID(vehicleid) { return 1 }
-stock GetVehiclexIDFromPlate(const plate[]) { return 1 }
-stock CreatePlate() { return 1 }
-stock IsVehicleFlipped(vehicleid) { return 1 }
-stock GetPlayerxVehicleCount(playerid) { return 1 }
-stock GetPlayerInGarageVehicleCount(playerid) { return 1 }
-stock GetVehicleModelIDFromName(const vname[]) { return 1 }
-stock GetPlayerIDFromName(const name[]) { return 1 }
-stock xStrcmp(const str1[], const str2[]) { return 1 }
-stock split(const src[], dest[][], const delimiter) { return 1 }
-stock Isim(playerid) { return 1 }
-stock park_cmd(playerid) { return 1 }
-stock vmenu_cmd(playerid) { return 1 }
-stock dealership_admin_panel(playerid) { return 1 }
-stock SetPlayerWalkingStyle(playerid, style) { return 1 }
-stock GetPlayerWalkingStyle(playerid) { return 1 }
-stock player_styles_cmd(playerid) { return 1 }
-stock IsPlayerInJail(playerid) { return 1 }
-stock SetPlayerJailStatus(playerid, bool:status) { return 1 }
-stock UpdatePlayerJailData(playerid) { return 1 }
-stock GivePlayerWantedLevel(playerid, const reason[]) { return 1 }
-stock ResetPlayerWantedLevel(playerid) { return 1 }
-stock GetPlayerTotalWantedLevel(playerid) { return 1 }
-stock GetPlayerWantedLevelStar(playerid) { return 1 }
-stock GetTotalWantedPlayers() { return 1 }
-stock AdminJail(playerid, stars, const Reason[]) { return 1 }
-stock SendPlayerInJail(playerid) { return 1 }
-stock SendPlayerToLSPD(playerid) { return 1 }
-stock wantedlist_cmd(playerid) { return 1 }
-stock View_Wanted_Database(playerid, targetid, total_crime = 0, paged = 0) { return 1 }
-stock JailPlayer(playerid) { return 1 }
-stock UnJailPlayer(playerid) { return 1 }
-stock GetPlayerACPStatus(playerid) { return 1 }
-stock SetPlayerACPStatus(playerid, bool:status) { return 1 }
-stock admin_command_menu(playerid) { return 1 }
-stock admin_command_panel(playerid) { return 1 }
-stock acp_player_manage(playerid, extraid) { return 1 }
-stock clean_screen(playerid) { return 1 }
-stock fix_screen(playerid) { return 1 }
-stock IntToHex(n) { return 1 }
-stock IsIpConnected(playerid) { return 1 }
-stock IsIpOfNoneAdminConnected(playerid) { return 1 }
-stock GetPlayerNameEx(playerid) { return 1 }
-stock convertNumber(value) { return 1 }
-stock GetVehicleSpeedEx(playerid) { return 1 }
-stock bool:IsArrayContainNumber(const array[], number, size = sizeof array) { return 1 }
-stock RandomNumberFromArray(const array[], size = sizeof array) { return 1 }
-stock GetWeaponNameEx(weaponid) { return 1 }
-stock GetNextWordFromString(const string[], const word[], pos = 0) { return 1 }
-stock GetOnlinePlayerCount() { return 1 }
-stock bool:IsPlayerInArea(playerid, Float:MinX, Float:MinY, Float:MaxX, Float:MaxY) { return 1 }
-stock bool:IsXYInArea(Float:x, Float:y, Float:MinX, Float:MinY, Float:MaxX, Float:MaxY) { return 1 }
-stock Float:frandom(Float:min, Float:max, dp = 2) { return 1 }
-stock GetRandomPosAtLocation(Float:distance, Float:X, Float:Y, Float:Z, &Float:x, &Float:y, &Float:z) { return 1 }
-stock GetRandomPosInArea(Float:MinX, Float:MinY, Float:MaxX, Float:MaxY, &Float:x, &Float:y) { return 1 }
-stock Float:GetAngleBetweenPoints(Float:x, Float:y, Float:X, Float:Y) { return 1 }
+native Alexa(playerid, const query[], const response[], size = sizeof response); 
+native Math(const query[], const response[], size = sizeof response); 
+native IsStringContainWords(const string[], const words[]); 
+native Google(const query[], const response[], size = sizeof response); 
+native SortString(const input[], const response[], size = sizeof response); 
+native GetWord(const string[], position = 0, const response[], size = sizeof response); 
+native GetSubString(const string[], const word[], const response[], size = sizeof response); 
+native Translate(const input[], const lang_code[], const Output[], size); 
+native ResetChatSpam(playerid);
+native OnSpeedHackDetected(playerid);
+native ResetOriginalPos(playerid);
+native CallResetTeleportBit(playerid);
+native GetPlayerTeleportKickStatus(playerid);
+native SetPlayerTeleportKickStatus(playerid, bool:status);
+native OnPlayerTeleport(playerid, Float:distance);
+native SaveVehiclePosition(vehicleid);
+native ResetHackCounter(playerid);
+native OnAntiCheatVehicleWarp(playerid, vehicleid);
+native OnAntiCheatVehicleWarpInto(playerid, vehicleid);
+native OnPlayerInvalidBulletShot(playerid, reason);
+native OnVehicleFlyHack(playerid, Float:distance);
+native OnIncomingPacket(playerid, packetid, BitStream:bs);
+native OnIncomingRPC(playerid, rpcid, BitStream:bs);
+native OnVehicleDeathRequest(vehicleid, killerid);
+native CheckVehicleHealthHack();
+native ResetVehicleEx(vehicleid);
+native OnPlayerVehicleRepair(playerid);
+native OnSetVehicleToRespawnEx(vehicleid);
+native SetVehicleToRespawnEx(vehicleid);
+native freezeEx(playerid, time);
+native freeze(playerid);
+native unfreeze(playerid);
+native OnPlayerfreezed(playerid);
+native OnPlayerUnfreezed(playerid);
+native ResetHealthBitCall(playerid);
+native ResetArmourBitCall(playerid);
+native TogglePlayerSpectatingEx(playerid,bool: toggle);
+native OnTogglePRSpectatingEx(playerid, bool:toggle);
+native SetPlayerPosEx(playerid, Float:x, Float:y, Float:z);
+native OnSetPlayerPosEx(playerid, Float:x, Float:y, Float:z);
+native SetPlayerPosFindZEx(playerid, Float:x, Float:y, Float:z);
+native OnSetPlayerPosFindZEx(playerid, Float:x, Float:y, Float:z);
+native PutPlayerInVehicleEx(playerid, vehicleid, seatid);
+native OnPutPlayerInVehicleEx(playerid, vehicleid, seatid);
+native SetPlayerInteriorEx(playerid, interiorid);
+native OnSetPlayerInteriorEx(playerid, interiorid);
+native SetPlayerVirtualWorldEx(playerid, worldid);
+native OnSetPlayerVWEx(playerid, worldid);
+native SetPlayerSkinEx(playerid, skinid);
+native OnSetPlayerSkin(playerid, skinid);
+native OnTeleportVehicleEx(vehicleid, x, y, z, angle, worldid, interiorid);
+native OnSetVehiclePosEx(vehicleid, Float:x, Float:y, Float:z);
+native OnPlayerSkinChange(playerid, newskin, oldskin);
+native OnPlayerVirtualWorld(playerid, newvirtualworld, oldvirtualworld);
+native Player_COD_Data_Update(playerid);
+native Player_COD_Data_Init(playerid);
+native COD_SpawnInMenu(playerid);
+native COD_PlayerInfoTDUpdate();
+native CSS_Respawn();
+native CSS_Bomb(Float:X, Float:Y, Float:Z, type, Float:Radius);
+native CSS_Defuse_Bomb();
+native OnPlayerEventJoin(playerid, eventid);
+native OnPlayerEventLeave(playerid, eventid);
+native Fallout_Start_Event();
+native FalloutStarting();
+native CheckPlayer();
+native FallingPlat();
+native PUBG_Player_Data_Update(playerid);
+native PUBG_Player_Data_Init(playerid);
+native PUBG_UpdatePlayerTD();
+native MapShrinkActivate();
+native PUBG_DestroyPlane(plane_obj);
+native PUBG_DestroyVehicles();
+native PUBG_DestroyPickups();
+native IsPlayerInMatchArea();
+native EventStartCall();
+native busroutestoptimer(playerid);
+native PJobInfo(playerid);
+native HidePJobInfo(playerid);
+native LoadLumberJackTrees();
+native LoadLumberJackBuyers();
+native LJJS_CutTree(playerid);
+native LJJS_RespawnTree(id);
+native LJJS_RemoveLog(id);
+native Vein_Generate();
+native Player_Mine(playerid);
+native Ore_Destroy(id);
+native OnPlayerShowTaxiDialog(playerid);
+native OnPlayerFinishedRace(playerid);
+native OnPlayerExitCar(playerid);
+native FillTrash(id);
+native DownRollerBase();
+native DownObserver_Base();
+native DownCaida_Base();
+native StopBull();
+native spawnVehiculeWithPlayerInto(playerid, vehicle_num, Float:x, Float:y, Float:z, Float:angle, Float:variationZ);
+native moveObject(objectid, Float:posx, Float:posy, Float:posz, Float:speed);
+native destroyMissile();
+native checkPlayerInZone(playerid);
+native createMissile();
+native explodeMissile();
+native launchMissile();
+native startCountdown();
+native load_actors();
+native Check();
+native update_player_zone_mark();
+native OnAutoDriveEnable(Path:pathid, playerid, start_time);
+native AutoDrive(playerid);
+native LoadBankers();
+native LoadATMs();
+native OnBankAccountCreated(playerid, pass[]);
+native OnBankAccountLogin(playerid, id);
+native OnBankAccountDeposit(playerid, amount);
+native OnBankAccountWithdraw(playerid, amount);
+native OnBankAccountTransfer(playerid, id, amount);
+native OnBankAccountTransferDone(playerid, id, amount);
+native OnBankAccountPassChange(playerid, newpass[]);
+native OnBankAccountDeleted(playerid, id, amount);
+native OnBankAccountAdminEdit(playerid);
+native ATM_Regen(id);
+native Player_Beta_Tester_Init(playerid);
+native Excitement(playerid,bitchid);
+native isPlayerInArea();
+native syncActors();
+native BusinessTimer();
+native LoadBusinesses();
+native OnBusinessCreated(businessid);
+native BusinessSaleMoney(playerid);
+native OnPermChange(playerid);
+native OnPermRemoved(playerid);
+native PlayerWins(playerid);
+native GameOwers(playerid);
+native Load_Clan();
+native Load_Clan_Rank();
+native Load_Clan_Skin();
+native Load_Clan_Weapon();
+native Load_Vehicle_Clan_Data();
+native Clan_Player_Init(playerid);
+native LoadPlayerProgress2(playerid);
+native ResetCorpSys(playerid);
+native crusher_OpenDoors();
+native DCC_OnChannelMessage(DCC_Channel:channel, DCC_User:author, const message[]);
+native OnDCCommandPerformed(args[], success);
+native reboot();
+native kick(playerid);
+native kickall(playerid);
+native Player_DJ_Data_Init(playerid);
+native DJRemixPlayList();
+native DJAutoPlayList(PlayListID);
+native LoadDealers();
+native Player_SaveDrugs(playerid);
+native Player_Init(playerid);
+native UpdateDealerDrugs(dealerid);
+native RemoveDealerDrugs(dealerid);
+native PlantGrowth(id);
+native PlantRot(id);
+native RegenHealth(playerid, amount);
+native RemoveEffects(playerid);
+native Acp_OnResponse(playerid, page, response, listitem, const inputtext[]);
+native Acp_OnInit(playerid, page);
+native Ascp_OnResponse(playerid, page, response, listitem, const inputtext[]);
+native Ascp_OnInit(playerid, page);
+native PlayerData_Data_Init(playerid);
+native OnDialogResponseEx(playerid, dialogid, offsetid, response, listitem, const inputtext[], extraid, const payload[]);
+native Hcp_OnResponse(playerid, docid, response);
+native load_objectsystem();
+native Pcp_OnResponse(playerid, page, response, listitem, const inputtext[]);
+native Pcp_OnInit(playerid, page);
+native Scp_OnResponse(playerid, page, response, listitem, const inputtext[]);
+native Scp_OnInit(playerid, page);
+native Ucp_OnResponse(playerid, page, response, listitem, const inputtext[]);
+native Ucp_OnInit(playerid, page);
+native LoadEntrance();
+native Load_Police_Faction_Objects();
+native Load_Faction();
+native Load_Faction_Rank();
+native Load_Faction_Skin();
+native Load_Faction_Weapon();
+native Load_Vehicle_Faction_Data();
+native Faction_Player_Init(playerid);
+native load_food_system();
+native RemoveObject(playerid);
+native FootballAnimation(playerid);
+native GoalCount();
+native FootbalTime();
+native ConsumeFuel();
+native Refuel(playerid, vehicleid);
+native load_autogates();
+native GateSystemCheck();
+native Hitmarket_LoadPlayerData(playerid);
+native Hitmarket_HasBounty(playerid);
+native PurgeExpiredHits();
+native ResetAndSaveHouses();
+native LoadHouses();
+native LoadFurnitures();
+native GiveHouseKeys(playerid);
+native HouseSaleMoney(playerid);
+native invisible_update();
+native IsPlayerHaveingDlTest(playerid);
+native IsPlayerHaveLightLicense(playerid);
+native IsPlayerHaveHeavyLicense(playerid);
+native IsPlayerHaveTwoWheelerLicense(playerid);
+native IsPlayerHaveHeliCopterLicense(playerid);
+native IsPlayerHavePlaneLicense(playerid);
+native IsPlayerHaveBoatLicense(playerid);
+native Player_Driving_Data_Init(playerid);
+native Player_Driving_Data_Update(playerid);
+native ResetDLStatus(playerid);
+native ResetLocation(playerid);
+native GetPlayerCash(playerid);
+native GivePlayerCash(playerid, money);
+native SetPlayerCash(playerid, money);
+native ResetPlayerCash(playerid);
+native GetPlayerLastHealth(playerid);
+native SetPlayerLastHealth(playerid, data);
+native GetPlayerLastArmour(playerid);
+native SetPlayerLastArmour(playerid, data);
+native GetPlayerAutoSpawn(playerid);
+native SetPlayerAutoSpawn(playerid, data);
+native GetPlayerAdminLevel(playerid);
+native SetPlayerAdminLevel(playerid, data);
+native GetPlayerVIPLevel(playerid);
+native SetPlayerVIPLevel(playerid, data);
+native GetPlayerWantedLevelEx(playerid);
+native SetPlayerWantedLevelEx(playerid, data);
+native GetPlayerInteriorID(playerid);
+native SetPlayerInteriorID(playerid, data);
+native GetPlayerVirtualWorldID(playerid);
+native SetPlayerVirtualWorldID(playerid, data);
+native IsPlayerMasterAdmin(playerid);
+native SetPlayerMasterAdmin(playerid, bool:data);
+native IsPlayerBanned(playerid);
+native SetPlayerBanStatus(playerid, bool:data);
+native UpdatePlayerDB(playerid);
+native OnPlayerDataCheck(playerid, corrupt_check);
+native OnPlayerLogin(playerid);
+native OnPlayerRegister(playerid);
+native CallOnFirstSpawn(playerid);
+native OnFirstSpawn(playerid);
+native opc_login_check(playerid);
+native HTTP_OnLookupResponse(playerid, response, data[]);
+native OnPlayerKilled(playerid, killerid, weaponid);
+native Lottery(playerid);
+native ShowRandomNumbers(playerid);
+native HideError(playerid);
+native Elevator_Boost(floorid);
+native Elevator_TurnToIdle();
+native LoadDefaulMapIcons();
+native elevator();
+native Bus_NPC_Connect();
+native __OnPlayerPSYSTimerUpdate(playerid);
+native OnPlayerPause(playerid);
+native OnPlayerResume(playerid, pausedtime);
+native EndCallBecauseWait(playerid);
+native S3TragaperrasGO(playerid);
+native S3TragaperrasEND(playerid);
+native GalaxyS3PhoneStart(playerid);
+native UpdateTime();
+native Player_Patch_Status_Init(playerid, const pName[]);
+native OnPatchStatusUpdate_Hud(playerid);
+native OnPatchStatusUpdate_LSP(playerid);
+native OnPlayerEditObject(playerid, playerobject, objectid, response, Float:fX, Float:fY, Float:fZ, Float:fRotX, Float:fRotY, Float:fRotZ);
+native countdownTimer(race, count);
+native exitVehTimer(playerid);
+native raceEndingTimer(race);
+native respawnUnfreeze(playerid);
+native removeText(playerid);
+native OnRacePathCalculated(Path:pathid, slot);
+native RanMessage();
+native load_randmessage();
+native LoadRegister_Data();
+native CashReg_Reset(id, smokeid);
+native CashReg_Rob(playerid);
+native SetPlayerRPMode(playerid, bool:status);
+native EnablePlayerRPMode(playerid);
+native DisablePlayerRPMode(playerid);
+native ResetRPMode(playerid);
+native Safe_Lock(id);
+native LoadSafe_Data();
+native scoresystem(playerid);
+native load_shop_systems();
+native OnClothesLoad(playerid);
+native OnFinishPurchase(playerid, index);
+native OnRemoveFromSlot(playerid, slot);
+native svetstart(playerid);
+native dimstart(playerid);
+native startone(playerid);
+native startonex(playerid);
+native destroyFlare(playerid);
+native vms_car_repair(playerid);
+native OnSnakeUpdate();
+native ShipTimer();
+native CloseDoor1();
+native CloseDoor2();
+native CloseDoor3();
+native SprayTag_Dialog(iPlayerID, iType);
+native SprayTag(playerid, type);
+native SprayTag_Load(extraid, type);
+native SprayTag_QueryCreate(playerid, iIndex);
+native Load_Static_vehicles();
+native Update_Static_Vehicle(Id);
+native DestroyVehicleEx(vehicleid);
+native FlyPlane(id, Float: x, Float: y, Float: z, angle);
+native MakeDrop(id, Float: x, Float: y, Float: z);
+native RemoveDrop(id);
+native TragaperrasGO(playerid);
+native TragaperrasEND(playerid);
+native LoaderAnimation(playerid);
+native StartWin8(playerid);
+native LoaderAnimation2(playerid);
+native Win8GO(playerid);
+native tablet_UpdateTime(playerid);
+native tablet_UpdateTime2(playerid);
+native TaserGetUp(playerid);
+native ChargeUp(playerid);
+native nexttic(pplayer1,pplayer2);
+native HP_TIme_Line();
+native respawnunoccupiedvehicle();
+native VSASUpdate(playerid);
+native LoadxVehicles();
+native BidBitir(sender, alan);
+native LoadCarKeys(playerid);
+native WalkAnim(playerid);
+native OnPlayerGiveWantedLevel(playerid, const reason[]);
+native OnPlayerWantedLevelReset(playerid);
+native Player_Wanted_Data_Init(playerid);
+native UpdatePlayersWantedLevel();
+native OnPlayerJailed(playerid);
+native OnPlayerUnJailed(playerid);
+native RemoveLastWantedLevel(playerid);
+native OnAlexaCommand(playerid, const cmd[], const text[]);
+native bool:IsTimePassedForPlayer(playerid, const Function_Name[], seconds);
+native ResetChatSpamTimer(playerid);
+native GetPlayerSpeedHackKickStatus(playerid);
+native SetPlayerSpeedHackKickStatus(playerid, bool:status);
+native IsPlayerFalling(playerid);          
+native ActivateResetOriginalPos(playerid);
+native DeactivateResetOriginalPos(playerid);
+native ResetTeleportBit(playerid, time);
+native SetVehicleOriginalPos(vehicleid);
+native AttachTrailerToVehicleEx(trailerid, vehicleid);
+native DetachTrailerFromVehicleEx(vehicleid);
+native Float:GetVehicleAntiHealthEx(vehicleid);
+native Float:GetVehicleHealthEx(vehicleid);
+native SetVehicleHealthEx(vehicleid, Float:vhealth);
+native IsPlayerFreezed(playerid);
+native GivePlayerWeaponEx(playerid,weaponid,ammo);
+native ResetPlayerWeaponsEx(playerid);
+native IsPlayerHaveWeapon(playerid, weaponid);
+native SetPlayerHealthEx(playerid, Float:sHealth);
+native GetPlayerHealthEx(playerid);
+native ResetHealthBit(playerid);
+native SetPlayerArmourEx(playerid, Float:varmour);
+native GetPlayerArmourEx(playerid);
+native ResetArmourBit(playerid);
+native TeleportVehicleEx(vehicleid,Float:x,Float:y,Float:z,Float:angle, worldid = -1, interiorid = -1);
+native SetVehiclePosEx(vehicleid, Float:x, Float:y, Float:z);
+native SendClientMessageEx(playerid, color, const message[], bool:translate = true);
+native bool:GetPlayerSpectatingStatus(playerid);
+native COD_GetPlayerScore(playerid);
+native COD_SetPlayerScore(playerid, data);
+native COD_GetPlayerDeaths(playerid);
+native COD_SetPlayerDeaths(playerid, data);
+native COD_GetPlayerKills(playerid);
+native COD_SetPlayerKills(playerid, data);
+native bool:COD_IsTeamValid(teamid);
+native COD_GetTeamColor(teamid);
+native COD_GetTeamName(teamid);
+native COD_GetRankName(rankid);
+native COD_GetRankRequireScore(rankid);
+native COD_GetTotalPlayerInTeam(teamid);
+native COD_SetPlayerTeam(playerid, teamid);
+native COD_GetPlayerRank(playerid);
+native COD_SetPlayerRank(playerid, rankid);
+native COD_GetPlayerTeam(playerid);
+native COD_ShowZonesToPlayer(playerid);
+native COD_HideZonesToPlayer(playerid);
+native COD_PlayerInfoTDCreate(playerid);
+native COD_PlayerInfoTDDestroy(playerid);
+native COD_PlayerInfoTDShow(playerid);
+native COD_PlayerInfoTDHide(playerid);
+native bool:COD_HasPlayerFlag(playerid);
+native COD_GetPlayerFlag(playerid);
+native COD_SetPlayerFlag(playerid, data);
+native COD_CODZ_CreateFlag(zoneid);
+native COD_CODZ_GetZoneColor(zoneid);
+native COD_CODZ_SetZoneTeam(zoneid, teamid);
+native COD_CODZ_GetZoneTeam(zoneid);
+native COD_CODZ_GetZoneName(zoneid);
+native COD_CODZ_ZoneSpawn(playerid, const inputtext[]);
+native COD_CODZ_UpdateZonesForAll();
+native COD_CODZ_ShowZonesToPlayer(playerid);
+native COD_CODZ_HideZonesToPlayer(playerid);
+native CSS_Spawn_CT(playerid);
+native CSS_Spawn_TR(playerid);
+native CSS_SetPDeathstatus(playerid, bool:status);
+native CSS_GetPDeathstatus(playerid);
+native CSS_GetPCountCT();
+native CSS_GetPCountT();
+native CSS_IsTeamBalanced();
+native CSS_GetTPAliveCountCT();
+native CSS_GetTPAliveCountT();
+native CSS_TeamWinCT();
+native CSS_TeamWinT();
+native CSS_IsBombPlanted();
+native bool:GetPlayerEventVSpawnAuth(playerid);
+native SetPlayerEventVSpawnAuth(playerid, bool:status);
+native GetPlayerEventID(playerid);
+native IsPlayerInEvent(playerid);
+native SetPlayerEventID(playerid, event_id);
+native IsEventIdValid(event_id);
+native GetEventName(event_id);
+native GetEventStatus(event_id);
+native join_event(playerid, event_id);
+native leave_event(playerid);
+native events_cmd(playerid);
+native ev_cmd(playerid, const Vehicle[], VehicleID, ColorOne, ColorTwo);
+native SendEventMessage(playerid, eventid, const message[]);
+native SendEventMessageAll(eventid, const message[]);
+native PurgePlatform();
+native Platforms();
+native PUBG_GetRandomLocation(&Float:x, &Float:y, &Float:z);
+native PUBG_GetPlayerKills(playerid);
+native PUBG_SetPlayerKills(playerid, data);
+native PUBG_GetPlayerDeaths(playerid);
+native PUBG_SetPlayerDeaths(playerid, data);
+native PUBG_GetPlayerPlayed(playerid);
+native PUBG_SetPlayerPlayed(playerid, data);
+native PUBG_GetPlayerWins(playerid);
+native PUBG_SetPlayerWins(playerid, data);
+native PUBG_IsPlayerInPlane(playerid);
+native PUBG_SetPlayerInPlaneStatus(playerid, bool:data);
+native PUBG_IsPlayerInMatch(playerid);
+native PUBG_SetPlayerInMatchStatus(playerid, bool:data);
+native PUBG_GetTotalAlive();
+native PUBG_PlayerInfoTDCreate(playerid);
+native LobberySpawn(playerid);
+native PUBG_PlayerInfoTDDestroy(playerid);
+native PUBG_PlayerInfoTDShow(playerid);
+native PUBG_PlayerInfoTDHide(playerid);
+native PUBG_EventStart();
+native PUBG_EventEnd();
+native PUBG_WarnForMapArea();
+native PUBG_SpawnVehicles();
+native PUBG_SpawnPickups();
+native skyfall_cmd(playerid);
+native show_event_locations(playerid);
+native lumberjack_admin_panel(playerid);
+native GetPlayerPoint(playerid);
+native IsTaxiCar(vehicleid);
+native GetPriceTaxi(playerid);
+native GetPriceTaxiEx(playerid);
+native GetPlayerCarDriver(playerid);
+native GetPlayerCarPass(playerid);
+native lsfunfair_cmd(playerid);
+native actor_admin_panel(playerid);
+native actor_quick_action_cmd(playerid);
+native AMSS_Show(playerid);
+native AMSS_Hide(playerid);
+native GetPlayerUsingAnimationStatus(playerid);
+native SetPlayerUsingAnimationStatus(playerid, bool:status);
+native ANS_StopLoopingAnim(playerid);
+native ANS_PreloadAnimLib(playerid, const animlib[]);
+native IsInLowRider(playerid);
+native Anim_Commands(playerid);
+native weapsys_GetWeaponModel(weaponid);
+native Float:atan2VehicleZ(Float:Xb,Float:Yb,Float:Xe,Float:Ye);
+native PullVehicleIntoDirection(vehicleid, Float:x, Float:y, Float:z, Float:speed);
+native autodrive_cmd(playerid);
+native autodrivedspeed_cmd(playerid, Float:speed);
+native autodrivestop_cmd(playerid);
+native autodrive_menu(playerid);
+native GetPlayerRepairAuth(playerid);
+native SetPlayerRepairAuth(playerid, bool:status);
+native GetPlayerAutoRepairAuth(playerid);
+native SetPlayerAutoRepairAuth(playerid, bool:status);
+native bank_cmd(playerid);
+native atm_cmd(playerid);
+native bank_acp(playerid);
+native GetPlayerBetaTesterStatus(playerid);
+native SetPlayerBetaTesterStatus(playerid, bool:status);
+native SetPlayerBetaTester(playerid, bool:status);
+native TogglePlayerMovieMod(playerid,mod);
+native business_cmd(playerid);
+native CreateDynamicObjectCamp(Float:x,Float:y,Float:z,Float:a); 
+native DestroyDynamicObjectCamp();
+native putcamp_cmd(playerid);
+native removecamp_cmd(playerid);
+native info_casino(playerid);
+native td_casino(playerid);
+native casinoplay_cmd(playerid);
+native GetVehicleClan(vehicleid);
+native ShowClanLockerMenu(playerid, clanid);
+native Update_Player_Clan_Data(playerid);
+native Remove_Player_Clan(playerid, PId);
+native Clan_ShowZonesToPlayer(playerid);
+native Clan_HideZonesToPlayer(playerid);
+native GetPlayerClan(playerid);
+native GetPlayerClanRank(playerid);
+native SetPlayerClan(playerid, clanid, rankid);
+native GetClanColor(fId);
+native GetPlayerClanStatus(playerid);
+native SetPlayerClanStatus(playerid, bool:status);
+native GetPlayerClanRequestID(playerid);
+native SetPlayerClanRequestID(playerid, clanid);
+native GetPlayersReqForClanCount(clanid);
+native GetClanLeader(Id);
+native GetClanLeaderId(fID);
+native GetClanMemberCount(Id);
+native GetClanName(Id);
+native GetClanId(Id);
+native GetClanWage(Id);
+native GetClanRankName(fId, rId);
+native clans_cmd(playerid);
+native clanpu_cmd(playerid);
+native SetClanWeaponbySlotID(playerid);
+native SetClanRankNameByRankID(playerid);
+native SetClanSkinbySlotID(playerid);
+native Computer_ReturnPlayerZone(playerid);
+native Computer_IsPlayerInZone(playerid, zoneid); 
+native Computer_GetPlayerZone(playerid);
+native loadcomputers();
+native destroy( playerid, const params[] );
+native reditc( playerid,const params[] );
+native rgotoc( playerid,const params[] );
+native getco( playerid, const params[] );
+native buycom( playerid);
+native editcomplace(playerid);
+native sellcom(playerid);
+native rsellcom(playerid);
+native removecomputer(playerid);
+native gpscom(playerid);
+native lockunlock(playerid);
+native removecom(comid);
+native CreateComputer( playerid, Float:x, Float:y, Float:z, Float:a );
+native StarComp(playerid);
+native createclabel(i);
+native refleshclabel(i);
+native shutdown(playerid);
+native Computer_UpdateTime(i);
+native showSuperBall(playerid); 
+native hideSuperBall(playerid); 
+native showmusic(playerid); 
+native hidemusic(playerid); 
+native showonglet(playerid); 
+native shownotif(playerid); 
+native hidenotif(playerid); 
+native showfbd(playerid); 
+native showerd(playerid);
+native hideerd(playerid);
+native hidefbd(playerid); 
+native hideonglet(playerid); 
+native showlang(playerid); 
+native hidelang(playerid); 
+native showmenu(playerid); 
+native Computer_showzmenu(playerid);
+native showpgzmenu(playerid); 
+native hidepgzmenu(playerid); 
+native hidezmenu(playerid); 
+native hidemenu(playerid); 
+native showdatafonddec(playerid); 
+native hidedatafonddec(playerid); 
+native showfonddec(playerid); 
+native hidefonddec(playerid); 
+native showbarre(playerid); 
+native hidebarre(playerid); 
+native showwinico(playerid); 
+native hidewinico(playerid); 
+native showmap(playerid); 
+native showZombies(playerid); 
+native hideZombies(playerid); 
+native hidemap(playerid); 
+native spmusic(playerid); 
+native setPlay(playerid); 
+native SetStop(playerid); 
+native musicplace(playerid);
+native editmpos(playerid,pos);
+native showpbarre(playerid);
+native showpball(playerid);
+native hidepbarre(playerid);
+native destroybarre(playerid);
+native refleshballbar(playerid);
+native createpb(playerid); 
+native movepbarre(playerid,Float:X,Float:Y); 
+native ShowAllPlayer(playerid);
+native ShowMsgPlayer(playerid);
+native SM(playerid,const msg[]); 
+native rconlist(playerid); 
+native getid(const params[]); 
+native barrelang(playerid, langue);
+native tarjm(playerid, langue);
+native onlineerror(playerid);
+native UpdateTextDrawKiller(playerid);
+native crusher_IsVehicleWanted(vehicleid);
+native ObtainScriptDebugID(const FunctionName[]);
+native RemoveScriptDebugID(id);
+native GetTotalScriptDebugID();
+native GetTotalFreeScriptDebugID();
+native GetTotalObtainedScriptDebugID();
+native bool:IsValidScriptDebugID(id);
+native bool:IsValidDebugID(debug_id);
+native bool:GetPlayerDebugStatus(playerid, debug_id);
+native SetPlayerDebugStatus(playerid, debug_id, bool:status);
+native SendDebugMessage(debug_id, const message[]);
+native cmd_debug_menu(playerid);
+native SendDCM(const message[]);
+native Discord_ALog(const message[]);
+native Discord_Log(const message[]);
+native Discord_WIIS(const message[]);
+native Discord_RPLOG(const message[]);
+native IsPlayerDJ(playerid);
+native SetPlayerDJStatus(playerid, bool:status);
+native SetPlayerAsDJ(playerid, bool:status);
+native GetPlayerTTSstatus(playerid);
+native SetPlayerTTSstatus(playerid, bool:status);
+native GetPlayerMP3status(playerid);
+native SetPlayerMP3status(playerid, bool:status);
+native GetPlayListSongName(SongID);
+native GetPlayListSongCreator(SongID);
+native GetPlayListName(PlayListID);
+native GetPlayListCreatorName(PlayListID);
+native View_PlayList(playerid, paged = 0);
+native View_PlayList_Songs(playerid, PlayListID, paged = 0);
+native Open_DJ_Panel(playerid);
+native ProxDetector(Float: radius = 30.0, playerid, const text[], col1 = 0xFFFFFFFF, col2 = 0xCCCCCCFF, col3 = 0x999999FF, col4 = 0x666666FF, col5 = 0x333333FF);
+native GDS_RemovePlayerWeapon(playerid, weaponid);
+native dropgunsystem_admin_panel(playerid);
+native usedrugs_cmd(playerid, amount);
+native givedrugs_cmd(playerid, id, amount);
+native selldrugs_cmd(playerid, id, price);
+native drug_dealer_cmd(playerid);
+native drug_plant_cmd(playerid, const params[]);
+native drug_acp(playerid);
+native iorp_drug_menu(playerid);
+native Acp_Init(playerid, page = 0);
+native Acp_AddCommand(playerid, const command[], bool:top = false);
+native Ascp_Init(playerid, page = 0);
+native Ascp_AddCommand(playerid, const command[], bool:top = false);
+native Credit_GetFreeID(page, const Script[], const Author[]);
+native Credit_RemoveID(id);
+native Credit_TotalID();
+native Credit_GetTotalFreeID();
+native Credit_GetTotalUsedID();
+native bool:Credit_IsValidID(id);
+native Credits_Init(playerid, page = 0);
+native Database_Add_Bool(const column[]);
+native Database_Add_Int(const column[]);
+native Database_Add_Float(const column[]);
+native Database_Add_String(const column[], size = 50);
+native bool:Database_Get_Bool(playerid, const column[]);
+native Database_Get_Int(playerid, const column[]);
+native Float:Database_Get_Float(playerid, const column[]);
+native Database_Get_String(playerid, const column[]);
+native Database_Update_Bool(playerid, const column[], bool:data);
+native Database_Update_Int(playerid, const column[], data);
+native Database_Update_Float(playerid, const column[], Float:data);
+native Database_Update_String(playerid, const column[], const data[]);
+native Dialog_GetFreeID();
+native Dialog_RemoveID(id);
+native Dialog_TotalID();
+native Dialog_GetTotalFreeID();
+native Dialog_GetTotalUsedID();
+native bool:Dialog_IsValidID(id);
+native ShowPlayerDialogEx(playerid, dialogid, offsetid, style, const caption[], const info[], const button1[], const button2[], extraid = -1, const payload[] = \"null\");
+native Doc_GetFreeID();
+native Doc_RemoveID(id);
+native Doc_TotalID();
+native Doc_GetTotalFreeID();
+native Doc_GetTotalUsedID();
+native bool:Doc_IsValidID(id);
+native Hcp_AddDoc(page, docid, const DocTitle[], const DocData[]);
+native Hcp_ViewDoc(playerid, docid);
+native Hcp_Init(playerid, page = 0);
+native reload_dynamicobj();
+native dynamicobject_admin_panel(playerid);
+native Pcp_Init(playerid, page = 0);
+native Pcp_AddCommand(playerid, const command[], bool:top = false);
+native Scp_Init(playerid, page = 0);
+native Scp_AddCommand(playerid, const command[], bool:top = false);
+native Ucp_Init(playerid, page = 0);
+native Ucp_AddCommand(playerid, const command[], bool:top = false);
+native GetPlayerUCPStatus(playerid);
+native SetPlayerUCPStatus(playerid, bool:status);
+native User_Panel(playerid);
+native User_PanelMenu(playerid);
+native Entrance_Update(entranceID);
+native entrance_admin_panel(playerid);
+native sapdobject_cmd(playerid);
+native GetVehicleFaction(vehicleid);
+native ShowFactionLockerMenu(playerid, factionid);
+native Update_Player_Faction_Data(playerid);
+native Remove_Player_Faction(playerid, PId);
+native Faction_ShowZonesToPlayer(playerid);
+native Faction_HideZonesToPlayer(playerid);
+native GetPlayerFaction(playerid);
+native GetPlayerFactionRank(playerid);
+native SetPlayerFaction(playerid, factionid, rankid);
+native GetFactionColor(fId);
+native GetPlayerFactionStatus(playerid);
+native SetPlayerFactionStatus(playerid, bool:status);
+native GetPlayerFactionRequestID(playerid);
+native SetPlayerFactionRequestID(playerid, factionid);
+native GetPlayersReqForFactionCount(factionid);
+native GetFactionLeader(Id);
+native GetFactionLeaderId(fID);
+native GetFactionMemberCount(Id);
+native GetFactionName(Id);
+native GetFactionId(Id);
+native GetFactionWage(Id);
+native GetFactionRankName(fId, rId);
+native factions_cmd(playerid);
+native factionpu_cmd(playerid);
+native SetFactionWeaponbySlotID(playerid);
+native SetFactionRankNameByRankID(playerid);
+native SetFactionSkinbySlotID(playerid);
+native bool:IsValidRelation(relationid);
+native CMD_FamilyDialog(playerid);
+native GetMoveDirectionFromKeys(ud, lr);
+native MoveCamera(playerid);
+native SetFlyModePos(playerid, Float:x, Float:y, Float:z);
+native GetFlyModePos(playerid, &Float:x, &Float:y, &Float:z);
+native GetNextCameraPosition(move_mode, const Float:CP[3], const Float:FV[3], &Float:X, &Float:Y, &Float:Z);
+native CancelFlyMode(playerid);
+native StartFlyMode(playerid);
+native GetXYInFrontOfActor(actorid, &Float:x, &Float:y, Float:distance);
+native food_system_admin_panel(playerid);
+native save_food_act_cmd(playerid);
+native IsPlayerNearFood(playerid);
+native order_food_cmd(playerid);
+native FootballMessage(color, const string[]);
+native IsObjectInTheArea(objectid, Float:minx, Float:miny, Float:maxx, Float:maxy);
+native LoopingAnim(playerid, const animlib[], const animname[], Float:vSpeed, looping, lockx, locky, lockz, lp);
+native StopLoopingAnim(playerid);
+native cmd_football(playerid);
+native GetPlayerFuelAuth(playerid);
+native SetPlayerFuelAuth(playerid, bool:status);
+native GetPlayerAutoFuelAuth(playerid);
+native SetPlayerAutoFuelAuth(playerid, bool:status);
+native refuel_cmd(playerid);
+native SetVehicleFuelEx(vehicleid, fuel);
+native Float:GetVehicleFuelEx(vehicleid);
+native Fuel_System_ACP(playerid);
+native gate_cmd(playerid);
+native auto_gate_admin_panel(playerid);
+native gps_cmd(playerid);
+native hit_OnPlayerDeath(playerid, killerid);
+native LoadHouseKeys(playerid);
+native GetZoneName(Float: x, Float: y, Float: z);
+native GetCityName(Float: x, Float: y, Float: z);
+native RemovePlayerWeapon(playerid, weapon);
+native GetXYInFrontOfPlayer(playerid, &Float:x, &Float:y, Float:distance);
+native GetXYInBackOfPlayer(playerid, &Float:x, &Float:y, Float:distance);
+native SendToHouse(playerid, id);
+native ShowHouseMenu(playerid);
+native ResetHouse(id);
+native SaveHouse(id);
+native UpdateHouseLabel(id);
+native OwnedHouses(playerid);
+native house_cmd(playerid);
+native SetPlayerInvicStatus(playerid, bool:status);
+native GetPlayerInvicStatus(playerid);
+native IsPlayerActivedInvisibleMode(playerid);
+native SetPlayerInvisibleMode(playerid, bool:status);
+native makeplayerinvisible_cmd(adminid, playerid);
+native dltest_cmd(playerid);
+native IsPlayerInFlyableVehicle(playerid);
+native ShowLifeGuide(playerid, intro_id = 0);
+native GetPlayerID(playerid);
+native SetPlayerID(playerid, data);
+native GetPlayerUsername(playerid);
+native SetPlayerUsername(playerid, const name[MAX_PLAYER_NAME]);
+native GetPlayerPassword(playerid);
+native SetPlayerPassword(playerid, const data[65]);
+native GetPlayerSalt(playerid);
+native SetPlayerSalt(playerid, const data[11]);
+native GetPlayerKills(playerid);
+native SetPlayerKills(playerid, data);
+native GetPlayerDeaths(playerid);
+native SetPlayerDeaths(playerid, data);
+native GetPlayerPlayedTime(playerid);
+native SetPlayerPlayedTime(playerid, data);
+native GetPlayerPauseTime(playerid);
+native SetPlayerPauseTime(playerid, data);
+native Float:GetPlayerLastPosX(playerid);
+native SetPlayerLastPosX(playerid, Float:data);
+native Float:GetPlayerLastPosY(playerid);
+native SetPlayerLastPosY(playerid, Float:data);
+native Float:GetPlayerLastPosZ(playerid);
+native SetPlayerLastPosZ(playerid, Float:data);
+native Float:GetPlayerLastPosAngle(playerid);
+native SetPlayerLastPosAngle(playerid, Float:data);
+native GetPlayerPasswordFails(playerid);
+native SetPlayerPasswordFails(playerid, data);
+native Cache:GetPlayerPlayer_Cache(playerid);
+native SetPlayerPlayer_Cache(playerid, Cache:data);
+native IsPlayerLoggedIn(playerid);
+native GetPlayerLoginStatus(playerid);
+native SetPlayerLoginStatus(playerid, bool:data);
+native GetPlayerSpawnStatus(playerid);
+native SetPlayerSpawnStatus(playerid, bool:data);
+native GetPlayerDeathStatus(playerid);
+native SetPlayerDeathStatus(playerid, bool:data);
+native GetPlayerUpdateTimerID(playerid);
+native SetPlayerUpdateTimerID(playerid, data);
+native GetPlayerScoreTimerID(playerid);
+native SetPlayerScoreTimerID(playerid, data);
+native bool:GetPlayerFirstSpawnStatus(playerid);
+native SetPlayerFirstSpawnStatus(playerid, bool:status);
+native GetPlayerCountry(playerid);
+native GetPlayerRegion(playerid);
+native GetPlayerCity(playerid);
+native GetPlayerISP(playerid);
+native GetPlayerTimezone(playerid);
+native GetPlayerZipcode(playerid);
+native changepassword_cmd(playerid, const newpass[]);
+native logout_cmd(playerid);
+native autospawn_cmd(playerid);
+native MasterAdmin_cmd(playerid);
+native GetPlayerMutedStatus(playerid);
+native SetPlayerMutedStatus(playerid, bool:status);
+native mute_cmd(playerid, pID, bool:status);
+native change_skin(playerid);
+native cmd_lottery(playerid);                                         
+native Lottery_GetFreeSlot(playerid);                                                          
+native FindSlot(playerid, lotter_number);                                                     
+native CreatePlayerTextDraws(playerid);                                                
+native CreateGlobalTextDraws();
+native HideTDForPlayer(playerid);
+native Elevator_Initialize();
+native Elevator_Destroy();
+native Elevator_OpenDoors();
+native Elevator_CloseDoors();
+native Floor_OpenDoors(floorid);
+native Floor_CloseDoors(floorid);
+native Elevator_MoveToFloor(floorid);
+native RemoveFirstQueueFloor();
+native AddFloorToQueue(floorid);
+native ResetElevatorQueue();
+native IsFloorInQueue(floorid);
+native ReadNextFloorInQueue();
+native DidPlayerRequestElevator(playerid);
+native ShowElevatorDialog(playerid);
+native CallElevator(playerid, floorid);
+native Float:GetElevatorZCoordForFloor(floorid);
+native Float:GetDoorsZCoordForFloor(floorid);
+native mapicon_admin_panel(playerid);
+native mill_mount_lift_cmd(playerid);
+native cmd_minigames(playerid);
+native MLM_GetMessages(const message[], const array[][], lines = sizeof(array), line_size = sizeof(array[]));
+native MLM_ShiftStartPos(const message[], pos, bool:is_packed, size = sizeof(message));
+native MLM_ShiftEndPos(const message[], pos, bool:is_packed);
+native MLM_MakeString(dest[], const size = sizeof(dest), const src[], const bool:is_packed, &last_color, const length, const line, &spos, &epos, const prefix[], const prefix_length, const postfix[], const postfix_length);
+native nametagson_cmd(playerid);
+native nametagsoff_cmd(playerid);
+native nametags_system_panel(playerid);
+native Start_Train_Engine(vehicleid);
+native bool:IsPlayerPaused(playerid); 
+native GetPlayerPausedTime(playerid); 
+native NumberUsed(playerid);
+native GetPlayerPhoneNumber(playerid);
+native GalaxyS3Phone(playerid,current);
+native GalaxyS3PhoneStarting(playerid,current);
+native GetMonth(Month);
+native GetYearFormat00(Year);
+native ActualizarWEATHER();
+native ReturnPlayerZone(playerid);
+native phonesys_IsPlayerInZone(playerid, zoneid); 
+native GetPlayerZone(playerid);
+native sel_phone_cmd(playerid);
+native mynumber_phone_cmd(playerid);
+native phone_cmd(playerid);
+native answer_phone_cmd(playerid);
+native hangup_phone_cmd(playerid);
+native GetPatchStatus_Hud(playerid);
+native SetPatchStatus_Hud(playerid, bool:status);
+native GetPatchStatus_LSP(playerid);
+native SetPatchStatus_LSP(playerid, bool:status);
+native player_patch_cmd(playerid);
+native GetPlayerPMstatus(playerid);
+native SetPlayerPMstatus(playerid, bool:status);
+native GetPlayerLastPMID(playerid);
+native SetPlayerLastPMID(playerid, recieverid);
+native nopm_cmd(playerid);
+native pm_cmd(playerid, receiverid, const message[]);
+native reply_cmd(playerid, const message[]);
+native bool:IsValidAccount(const Account[]);
+native bool:IsAccountDisabled(const Account[]);
+native GetAccountAdminLevel(const Account[]);
+native GetAccountVIPLevel(const Account[]);
+native bool:GetAccountMasterAdminStatus(const Account[]);
+native cmd_profile_action(playerid, const Account[]);
+native quick_action_cmd(playerid);
+native race_OnPlayerUpdateEx(playerid);
+native getFirstEmptyCPSlot(race);
+native updateContestantList(race);
+native createRace(playerid, slot);
+native spawnInRace(playerid, race, spot = -1);
+native calculateNextRacePart(slot, curCPSlot, MapNode:lastNode, bool: firstcalculation = false);
+native irs_race_system_show(playerid, const cmdtext[]);
+native iorp_race_menu(playerid);
+native hintmessages_cmd(playerid);
+native register_hacking_system_panel(playerid);
+native GetPlayerRPMode(playerid);
+native safe_hacking_system_panel(playerid);
+native CreateArt3(const ArtObject[][], type, Float:SA_PosX, Float:SA_PosY, Float:SA_PosZ, Float:SA_RotX, Float:SA_RotY, Float:SA_RotZ, Float:DrawDistance = 300.0);
+native CreateDynamicArt3(const ArtObject[][], type, Float:SA_PosX, Float:SA_PosY, Float:SA_PosZ, Float:SA_RotX, Float:SA_RotY, Float:SA_RotZ, worldid = -1, interiorid = -1, playerid = -1, Float:StreamDistance = 200.0, Float:DrawDistance = 300.0 );
+native CreateArtInternal3(const ArtObject[][], type, dynamic, Float:SA_PosX, Float:SA_PosY, Float:SA_PosZ, Float:SA_RotX, Float:SA_RotY, Float:SA_RotZ, worldid = -1, interiorid = -1, playerid = -1, Float:StreamDistance = 200.0, Float:DrawDistance = 300.0 );
+native DestroyArt3Internal(ArtID);
+native DestroyArt3(ArtID);
+native DestroyDynamicArt3(ArtID);
+native GetScoreTimerStatus(playerid);
+native ScoreTimerDisable(playerid);
+native ScoreTimerEnable(playerid);
+native SS_Update_Shop_Data(id);
+native SS_Drop_Shop_Data(id);
+native shop_system_acp(playerid);
+native SS_Open_Update_Menu(playerid, id);
+native SS_OpenShop(playerid, id);
+native LoadPlayerClothes(playerid);
+native GetFreeSlot(playerid);
+native OnBuyClothes(playerid, index, cmodel, bone, Float:fOffsetX, Float:fOffsetY, Float:fOffsetZ, Float:fRotX, Float:fRotY, Float:fRotZ, Float:fScaleX, Float:fScaleY, Float:fScaleZ);
+native ClothesEditDialog(playerid, index);
+native ShowClothesDialog(playerid, fromslot);
+native SavePlayerClothes(playerid);
+native UpdatePlayerToy(playerid, slot);
+native EditClothing(playerid, index);
+native ReplaceClothing(playerid, index);
+native PlaceClothing(playerid, index);
+native DisplayClothing(playerid);
+native ShowDialog(playerid, dialogid, style, const caption[], const info[], const button1[], const button2[], status);
+native GetModelName(cmodel);
+native RemoveFromSlot(playerid, slot);
+native ResetClothes(playerid);
+native GetName(playerid);
+native SyntaxMSG(playerid, const message[]);
+native GetBoneName(boneid);
+native bool:ETShop_GetPhoneStatus(playerid);
+native ETShop_SetPhoneStatus(playerid, bool:data);
+native bool:ETShop_GetTabletStatus(playerid);
+native ETShop_SetTabletStatus(playerid, bool:data);
+native etshop_cmd(playerid);
+native blow_pyrotechnic_cmd(playerid);
+native OpenRepairMenu(playerid);
+native OpenModMenu(playerid);
+native iorp_dealership_shop_menu(playerid);
+native weapons_shop_menu(playerid); 
+native start_snake_cmd(playerid);
+native start_spectate(playerid, targetid);
+native stop_spectate(playerid);
+native SprayTag_Create(playerid, iIndex);
+native SprayTag_Spawn(playerid, iIndex);
+native SprayTag_Save(playerid, iIndex);
+native SprayTag_Clear(playerid, iIndex);
+native HexToInt(const string[]);
+native cmd_tags(playerid);
+native GetPlayerStaticVehicleID(playerid);
+native GetStaticVehicleID(vehicleid);
+native GetStaticVehicleFactionID(Id);
+native staticvehicle_admin_panel(playerid);
+native drop_cmd(playerid);
+native ShowTabletForPlayer(playerid);
+native HideTabletForPlayer(playerid);
+native ShowUserLogTablet(playerid);
+native HideUserLogTablet(playerid);
+native ShowStartMenuTablet(playerid);
+native HideStartMenuTablet(playerid);
+native ShowPagForItems(playerid);
+native HidePagForItems(playerid);
+native ShowEscritorioForPlayer(playerid);
+native HideEscritorioForPlayer(playerid);
+native ShowPhotosForPlayer(playerid);
+native HidePhotosForPlayer(playerid);
+native ShowClockForPlayer(playerid);
+native HideClockForPlayer(playerid);
+native ShowTabletMusicPlayer(playerid);
+native HideTabletMusicPlayer(playerid);
+native CameraMode(playerid,type);
+native ShowTabletMap(playerid);
+native HideTabletMap(playerid);
+native ShowGames(playerid);
+native HideGames(playerid);
+native ShowSlotMachine(playerid);
+native HideSlotMachine(playerid);
+native ShowTabletWeather(playerid);
+native HideTabletWeather(playerid);
+native ShowPage(playerid,page);
+native IsNumeric(const string[]);
+native tablet_cmd(playerid);
+native taser_cmd(playerid);
+native GetPlayerTPAuth(playerid);
+native SetPlayerTPAuth(playerid, bool:status);
+native accept_ttt_cmd(playerid);
+native starttictac(pplayer1,pplayer2);
+native tickbox(playerid,boxid);
+native CreateTicTD(playerid);
+native cmd_tictacktoe(playerid);
+native CreateHPTL();
+native HideHPTL(playerid);
+native ShowHPTL(playerid);
+native DestroyHPTL();
+native uTranslate(const string[], const lang[]);
+native eTranslate(const string[], const lang[]);
+native GetPlayerNativeLang(playerid);
+native SetPlayerNativeLang(playerid, const lang[]);
+native EnableIncomingTranslation(playerid, const lang[]);
+native DisableIncomingTranslation(playerid);
+native bool:GetPlayerInTranslationStatus(playerid);
+native GetPlayerInTranslationLang(playerid);
+native EnableOutgoingTranslation(playerid, const lang[]);
+native DisableOutgoingTranslation(playerid);
+native bool:GetPlayerOutTranslationStatus(playerid);
+native bool:GetPlayerTranslationOMStatus(playerid);
+native SetPlayerTranslationOMStatus(playerid, bool:status);
+native GetPlayerOutTranslationLang(playerid);
+native Lang_Data();
+native ult_panel(playerid);
+native CreateVSAS(playerid);
+native HideVSAS(playerid);
+native ShowVSAS(playerid);
+native DestroyVSAS(playerid);
+native vm_cmd(playerid);
+native vunlock_cmd(playerid);
+native switch_engine(playerid);
+native switch_alarm(playerid);
+native switch_doors(playerid);
+native switch_bonnet(playerid);
+native switch_boot(playerid);
+native switch_windows(playerid);
+native switch_lights(playerid);
+native SaveVehicleMod(xid);
+native LoadVehicleMod(xid);
+native LoadxVehicleKeys(playerid);
+native GetVehiclexID(vehicleid);
+native GetVehiclexIDFromPlate(const plate[]);
+native CreatePlate();
+native IsVehicleFlipped(vehicleid);
+native GetPlayerxVehicleCount(playerid);
+native GetPlayerInGarageVehicleCount(playerid);
+native GetVehicleModelIDFromName(const vname[]);
+native GetPlayerIDFromName(const name[]);
+native xStrcmp(const str1[], const str2[]);
+native split(const src[], dest[][], const delimiter);
+native Isim(playerid);
+native park_cmd(playerid);
+native vmenu_cmd(playerid);
+native dealership_admin_panel(playerid);
+native SetPlayerWalkingStyle(playerid, style);
+native GetPlayerWalkingStyle(playerid);
+native player_styles_cmd(playerid);
+native IsPlayerInJail(playerid);
+native SetPlayerJailStatus(playerid, bool:status);
+native UpdatePlayerJailData(playerid);
+native GivePlayerWantedLevel(playerid, const reason[]);
+native ResetPlayerWantedLevel(playerid);
+native GetPlayerTotalWantedLevel(playerid);
+native GetPlayerWantedLevelStar(playerid);
+native GetTotalWantedPlayers();
+native AdminJail(playerid, stars, const Reason[]);
+native SendPlayerInJail(playerid);
+native SendPlayerToLSPD(playerid);
+native wantedlist_cmd(playerid);
+native View_Wanted_Database(playerid, targetid, total_crime = 0, paged = 0);
+native JailPlayer(playerid);
+native UnJailPlayer(playerid);
+native GetPlayerACPStatus(playerid);
+native SetPlayerACPStatus(playerid, bool:status);
+native admin_command_menu(playerid);
+native admin_command_panel(playerid);
+native acp_player_manage(playerid, extraid);
+native clean_screen(playerid);
+native fix_screen(playerid);
+native IntToHex(n);
+native IsIpConnected(playerid);
+native IsIpOfNoneAdminConnected(playerid);
+native GetPlayerNameEx(playerid);
+native convertNumber(value);
+native GetVehicleSpeedEx(playerid);
+native bool:IsArrayContainNumber(const array[], number, size = sizeof array);
+native RandomNumberFromArray(const array[], size = sizeof array);
+native GetWeaponNameEx(weaponid);
+native GetNextWordFromString(const string[], const word[], pos = 0);
+native GetOnlinePlayerCount();
+native bool:IsPlayerInArea(playerid, Float:MinX, Float:MinY, Float:MaxX, Float:MaxY);
+native bool:IsXYInArea(Float:x, Float:y, Float:MinX, Float:MinY, Float:MaxX, Float:MaxY);
+native Float:frandom(Float:min, Float:max, dp = 2);
+native GetRandomPosAtLocation(Float:distance, Float:X, Float:Y, Float:Z, &Float:x, &Float:y, &Float:z);
+native GetRandomPosInArea(Float:MinX, Float:MinY, Float:MaxX, Float:MaxY, &Float:x, &Float:y);
+native Float:GetAngleBetweenPoints(Float:x, Float:y, Float:X, Float:Y);
